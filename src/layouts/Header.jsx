@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { AuthContext } from '../Contexts/AuthProvider';
+// import { AuthContext } from '../Contexts/AuthProvider';
 
 const Header = () => {
-    const { user, userLogout } = useContext(AuthContext);
+    // const { user, userLogout } = useContext(AuthContext);
 
 
     const menuItems = <>
@@ -12,6 +12,7 @@ const Header = () => {
         <li><Link className='hover:text-primary uppercase hover:bg-transparent font-semibold' to='/destination'>Destination</Link></li>
         <li><Link className='hover:text-primary uppercase hover:bg-transparent font-semibold' to='/blog'>blog</Link></li>
         <li><Link className='hover:text-primary uppercase hover:bg-transparent font-semibold' to='/contact'>Contact Us</Link></li>
+        <li><Link className='hover:text-primary uppercase hover:bg-transparent font-semibold' to='/contact'>login/register</Link></li>
 
     </>
 

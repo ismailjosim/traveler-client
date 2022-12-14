@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Hero from './HomeSections/Hero';
 
 const Homepage = () => {
     return (
         <div>
-            <h3>Welcome to home</h3>
-            <Link>Go to Page</Link>
+            <Hero />
         </div>
     );
 };
