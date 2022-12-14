@@ -8,21 +8,21 @@ module.exports = {
       {
         mytheme: {
 
-          "primary": "#0FCFEC",
+          "primary": "#029E9D",
 
-          "secondary": "#3A4256",
+          "secondary": "#FDC703",
 
-          "accent": "#19D3AE",
+          "accent": "#ffbc00",
 
-          "neutral": "#151623",
+          "neutral": "#17233E",
 
           "base-100": "#FFFFFF",
 
-          "info": "#80C0EA",
+          "info": "#17233E",
 
-          "success": "#74ECC6",
+          "success": "#029E9D",
 
-          "warning": "#F9AD5D",
+          "warning": "#27334C",
 
           "error": "#F32B42",
         },
@@ -31,3 +31,4 @@ module.exports = {
   },
   plugins: [require("daisyui")],
 }
+
