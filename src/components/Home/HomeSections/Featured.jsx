@@ -1,0 +1,51 @@
+import React from 'react';
+import Card from './Card';
+import { BsFlag, BsGeoAltFill } from 'react-icons/bs';
+import { BiDirections, BiCompass } from "react-icons/bi";
+
+const featureData = [
+    {
+        id: 1,
+        icon: <BsFlag />,
+        title: 'Tell Us What You Want To Do',
+        subtitle: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
+        review: '100+ Reviews'
+    },
+    {
+        id: 2,
+        icon: <BsGeoAltFill />,
+        title: 'Share Your Travel Locations',
+        subtitle: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
+        review: '100+ Reviews'
+    },
+    {
+        id: 3,
+        icon: <BiDirections />,
+        title: 'Share Your Travel Preference',
+        subtitle: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
+        review: '100+ Reviews'
+    },
+    {
+        id: 4,
+        icon: <BiCompass />,
+        title: 'Here 100% Trusted Tour Agency',
+        subtitle: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
+        review: '100+ Reviews'
+    }
+]
+
+
+const Featured = () => {
+    return (
+        <div className='w-10/12 mx-auto my-10'>
+
+            <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-5'>
+                {
+                    featureData.map(data => <Card key={data.id} data={data}></Card>)
+                }
+            </div>
+        </div>
+    );
+};
+
+export default Featured;

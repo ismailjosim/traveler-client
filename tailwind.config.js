@@ -14,11 +14,11 @@ module.exports = {
 
           "accent": "#ffbc00",
 
-          "neutral": "#17233E",
+          "neutral": "#777777",
 
           "base-100": "#FFFFFF",
 
-          "info": "#17233E",
+          "info": "#17233e",
 
           "success": "#029E9D",
 
