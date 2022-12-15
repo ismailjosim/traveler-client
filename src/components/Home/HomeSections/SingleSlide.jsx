@@ -1,5 +1,7 @@
 import React from 'react';
 import { BsFillCaretLeftFill, BsFillCaretRightFill } from 'react-icons/bs';
+import '../../../styles/Custom.css'
+import Button from '../../../utilities/Button';
 
 const SingleSlide = ({ slide }) => {
     const { id, picture, subHeading, heading, description, btnText, prev, next } = slide;
@@ -25,7 +27,7 @@ const SingleSlide = ({ slide }) => {
                         <p className="mb-5 text-base">
                             {description}
                         </p>
-                        <button className="btn btn-primary hover:btn-secondary text-white">{btnText}</button>
+                        <Button btnText={btnText} destination='/about'></Button>
                     </div>
 
                 </div>

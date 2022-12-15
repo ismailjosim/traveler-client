@@ -1,10 +1,11 @@
 import React from 'react';
 
 import '../styles/Custom.css'
+import { Link } from 'react-router-dom';
 
-const Button = () => {
+const Button = ({ btnText, destination }) => {
     return (
-        <button className='nirBtn btn btn-primary text-white'>Discover Now</button>
+        <Link to={destination} className='btn btn-primary px-5 py-1 text-base relative z-10 text-white btn-custom font-semibold'>{btnText}</Link>
     );
 };
 
