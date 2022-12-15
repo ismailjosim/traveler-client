@@ -1,1 +1,18 @@
+.nirBtn {
+    transition: all ease-in-out .5s;
+    box-shadow: 0 0 0 4px rgb(255 255 255 / 10%);
+    overflow: hidden;
+}
 
+.nirBtn::before {
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    top: 0;
+    content: '';
+    background: #fdc703;
+    color: #fff !important;
+    transition: all ease-in-out .5s;
+    z-index: -1;
+}
