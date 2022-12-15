@@ -2,6 +2,7 @@ import React from 'react';
 import Card from './Card';
 import { BsFlag, BsGeoAltFill } from 'react-icons/bs';
 import { BiDirections, BiCompass } from "react-icons/bi";
+import SectionHeading from '../../../utilities/SectionHeading';
 
 const featureData = [
     {
@@ -36,9 +37,18 @@ const featureData = [
 
 
 const Featured = () => {
+    const heading = {
+        subHeading: 'Core Features',
+        headingOne: 'Find',
+        headingTwo: "Travel Perfection",
+        describe: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+    }
+
+
+
     return (
         <div className='w-10/12 mx-auto my-10'>
-
+            <SectionHeading heading={heading} />
             <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-5'>
                 {
                     featureData.map(data => <Card key={data.id} data={data}></Card>)
