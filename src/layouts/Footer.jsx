@@ -1,37 +1,64 @@
 import React from 'react';
-
+import logo from '../assets/footer/site-logo.png'
+import gallery01 from '../assets/images/gallery (1).jpg';
+import gallery02 from '../assets/images/gallery (2).jpg';
+import gallery03 from '../assets/images/gallery (3).jpg';
+import gallery04 from '../assets/images/gallery (4).jpg';
+import gallery05 from '../assets/images/gallery (5).jpg';
+import gallery06 from '../assets/images/gallery (6).jpg';
+import { BsEnvelopeFill, BsFillTelephoneFill } from "react-icons/bs";
+import { FaMapMarkerAlt } from "react-icons/fa";
 const Footer = () => {
+
+    const images = [gallery01, gallery02, gallery03, gallery04, gallery05, gallery06];
+
+
+
+
     return (
-        <footer className=" bg-footer-custom">
-            <div className='footer pt-20 w-11/12 mx-auto'>
+        <footer className="bg-accent text-white">
+            <div className='footer pt-20 w-11/12 mx-auto grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5'>
                 <div>
-                    <span className="footer-title">Services</span>
-                    <button className="link link-hover">Emergency Checkup</button>
-                    <button className="link link-hover">Monthly Checkup</button>
-                    <button className="link link-hover">Weekly Checkup</button>
-                    <button className="link link-hover">Deep Checkup</button>
+                    <img src={logo} alt="" />
+                    <p>
+                        Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia at perferendis, pretium, aenean aut ultrices.
+                    </p>
                 </div>
                 <div>
-                    <span className="footer-title">ORAL HEALTH</span>
+                    <span className="footer-title">Quick Link</span>
                     <button className="link link-hover">Fluoride Treatment</button>
                     <button className="link link-hover">Cavity Filling</button>
                     <button className="link link-hover">Teeth Whitening</button>
                 </div>
-                <div className=''>
-                    <span className="footer-title">OUR ADDRESS</span>
-                    <p>New York - 101010 Hudson</p>
-                    <div className='flex gap-6'>
-                        <button className='bg-primary p-2 text-white rounded-full hover:bg-secondary'>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
-                        </button>
-                        <button className='bg-primary p-2 text-white rounded-full hover:bg-secondary'>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg>
-                        </button>
-                        <button className='bg-primary p-2 text-white rounded-full hover:bg-secondary'>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg>
-                        </button>
-                    </div>
+                <div className='text-base'>
+                    <span className="footer-title">CONTACT US</span>
+                    <p>
+                        Feel free to contact and
+                        reach us !!
+                    </p>
+                    <button className="link link-hover flex items-center gap-3">
+                        <BsFillTelephoneFill />
+                        <a href="tel:+01988256203">+01(988) 256 203</a>
+                    </button>
+                    <button className="link link-hover flex items-center gap-3">
+                        <BsEnvelopeFill />
+                        <a href="tel:+01988256203">contact@traveler.com</a>
+                    </button>
+                    <button className="link link-hover flex items-center gap-3">
+                        <FaMapMarkerAlt />
+                        <a href="tel:+01988256203">3146 Koontz, California</a>
+                    </button>
 
+                </div>
+                <div className=''>
+                    <span className="footer-title">GALLERY</span>
+                    <div className='grid grid-cols-3 gap-2 rounded-lg'>
+                        {
+                            images.map((item, index) => (
+                                <img key={index} src={item} alt="" className='w-20 h-20 rounded-lg' />
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
             <p className='text-base text-center pb-10 pt-10'>Copyright 2022 All Rights Reserved</p>

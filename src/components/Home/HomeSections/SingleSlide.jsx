@@ -8,7 +8,7 @@ const SingleSlide = ({ slide }) => {
     return (
         <div id={`slide${ id }`} className="carousel-item relative w-full">
             <div className="hero h-[85vh]" style={{ backgroundImage: `url(${ picture })` }}>
-                <div className="hero-overlay bg-opacity-60"></div>
+                <div className="hero-overlay bg-opacity-40"></div>
                 <div className="hero-content text-center text-neutral-content">
                     {/* Slider Navigation button */}
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
