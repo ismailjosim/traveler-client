@@ -20,15 +20,18 @@ const Footer = () => {
             <div className='footer pt-20 w-11/12 mx-auto grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5'>
                 <div>
                     <img src={logo} alt="" />
-                    <p>
+                    <p className='text-base text-justify lg:w-5/6'>
                         Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia at perferendis, pretium, aenean aut ultrices.
                     </p>
                 </div>
-                <div>
+                <div className='text-base'>
                     <span className="footer-title">Quick Link</span>
-                    <button className="link link-hover">Fluoride Treatment</button>
-                    <button className="link link-hover">Cavity Filling</button>
-                    <button className="link link-hover">Teeth Whitening</button>
+                    <button className="link link-hover">About Us</button>
+                    <button className="link link-hover">Delivery Information</button>
+                    <button className="link link-hover">Privacy Policy</button>
+                    <button className="link link-hover">Terms & Conditions</button>
+                    <button className="link link-hover">Customer Service</button>
+                    <button className="link link-hover">Return Policy</button>
                 </div>
                 <div className='text-base'>
                     <span className="footer-title">CONTACT US</span>
