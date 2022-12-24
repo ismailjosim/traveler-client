@@ -44,7 +44,6 @@ const Header = () => {
                             {menuItems}
                         </ul>
                     </div>
-
                 </div>
             </div>
         </header>
