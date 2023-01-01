@@ -2,6 +2,7 @@ import React from 'react';
 import Featured from './HomeSections/Featured';
 import Hero from './HomeSections/Hero';
 import Destination from './HomeSections/Destination';
+import Activity from './HomeSections/Activity';
 
 
 const Homepage = () => {
@@ -10,6 +11,7 @@ const Homepage = () => {
             <Hero />
             <Featured />
             <Destination />
+            <Activity />
         </div>
     );
 };
