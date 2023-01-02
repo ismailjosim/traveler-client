@@ -12,7 +12,7 @@ const Header = () => {
         <li><Link className='hover:text-primary uppercase hover:bg-transparent font-semibold' to='/destination'>Destination</Link></li>
         <li><Link className='hover:text-primary uppercase hover:bg-transparent font-semibold' to='/blog'>blog</Link></li>
         <li><Link className='hover:text-primary uppercase hover:bg-transparent font-semibold' to='/contact'>Contact Us</Link></li>
-        <li><Link className='hover:text-primary uppercase hover:bg-transparent font-semibold' to='/contact'>login/register</Link></li>
+        <li><Link className='hover:text-primary uppercase hover:bg-transparent font-semibold' to='/login'>login/register</Link></li>
 
     </>
 

@@ -16,12 +16,12 @@ const ErrorPage = () => {
                             </div>
                         </div>
                         <div>
-                            <img src="https://i.ibb.co/G9DC8S0/404-2.png" />
+                            <img alt='' src="https://i.ibb.co/G9DC8S0/404-2.png" />
                         </div>
                     </div>
                 </div>
                 <div>
-                    <img src={logo} />
+                    <img alt='' src={logo} />
                 </div>
             </div>
         </div>
