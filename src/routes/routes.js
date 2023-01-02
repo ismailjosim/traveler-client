@@ -5,6 +5,7 @@ import ErrorPage from '../components/ErrorPage/ErrorPage';
 import UserLogin from '../components/Auth/UserLogin';
 import UserRegister from '../components/Auth/UserRegister';
 import About from '../components/About/About';
+import Destinations from '../components/Destinations/Destinations';
 
 
 const routes = createBrowserRouter([
@@ -28,6 +29,10 @@ const routes = createBrowserRouter([
             {
                 path: '/about',
                 element: <About />
+            },
+            {
+                path: '/destination',
+                element: <Destinations />
             }
         ]
     },

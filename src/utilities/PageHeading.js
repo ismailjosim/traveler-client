@@ -15,7 +15,7 @@ const PageHeading = ({ headTitle }) => {
                         <ul className='bg-transparent m-0 p-0 flex justify-center items-center gap-1 font-medium text-white'>
                             <li><Link className='text-primary' to='/'>Home</Link></li>
                             <span>|</span>
-                            <li>{headTitle}</li>
+                            <li className='capitalize'>{headTitle}</li>
                         </ul>
                     </nav>
                 </div>
