@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import '../../styles/Custom.css'
 
 function MyApp() {
@@ -64,11 +65,8 @@ function MyApp() {
                             Log in
                         </button>
                     </div>
-                    <p className="text-sm mt-4 font-medium leading-none text-gray-500">Don't have account?{" "}
-                        <span tabIndex={0} role="link" className="text-sm font-medium leading-none underline text-gray-800 cursor-pointer">
-                            {" "}
-                            Sign up here
-                        </span>
+                    <p className="text-sm mt-4 font-medium leading-none text-gray-500">Don't have account?
+                        <Link className='text-sm font-medium leading-none underline text-gray-800 cursor-pointer' to='/register'> Sign up here</Link>
                     </p>
                 </div>
             </div>
