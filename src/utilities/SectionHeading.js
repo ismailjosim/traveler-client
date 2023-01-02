@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Custom.css'
 
 const SectionHeading = ({ heading }) => {
     const { subHeading, headingOne, headingTwo, describe } = heading
