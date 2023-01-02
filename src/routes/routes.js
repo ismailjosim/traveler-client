@@ -6,6 +6,7 @@ import UserLogin from '../components/Auth/UserLogin';
 import UserRegister from '../components/Auth/UserRegister';
 import About from '../components/About/About';
 import Destinations from '../components/Destinations/Destinations';
+import Blogs from '../components/Blogs/Blogs';
 
 
 const routes = createBrowserRouter([
@@ -33,6 +34,10 @@ const routes = createBrowserRouter([
             {
                 path: '/destination',
                 element: <Destinations />
+            },
+            {
+                path: '/blog',
+                element: <Blogs />
             }
         ]
     },
