@@ -87,7 +87,7 @@
 
 }
 
-.bottom_animation:hover .why-us-content .icon {
+.bottom_animation:hover .bottom_animation .icon {
     color: #fff !important;
     transition-delay: .5s;
     transition: all ease-in-out .8s;
@@ -95,8 +95,7 @@
 }
 
 .bottom_animation:hover::before {
-    color: #fff !important;
-    height: 100%;
+    width: 100%;
     transition: all ease-in-out .5s;
 }
 
@@ -105,9 +104,9 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 0;
-    width: 100%;
-    background: #029e9d;
-    transition: all ease-in-out .5s;
-    z-index: -1;
+    width: 0;
+    height: 3px;
+    transition: all ease-in-out 0.5s;
+    background: #029e9d !important;
+    cursor: pointer;
 }
