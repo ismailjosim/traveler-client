@@ -18,12 +18,10 @@ const Partners = () => {
         {
             id: 1,
             img: brand01,
-            title: 'camping'
         },
         {
             id: 2,
             img: brand02,
-            title: 'cycling'
         },
         {
             id: 3,
@@ -33,17 +31,14 @@ const Partners = () => {
         {
             id: 4,
             img: brand04,
-            title: 'safari'
         },
         {
             id: 5,
             img: brand05,
-            title: 'Beach'
         },
         {
             id: 6,
             img: brand06,
-            title: 'surfing'
         }
     ]
 
