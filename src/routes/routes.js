@@ -8,6 +8,7 @@ import About from '../components/About/About';
 import Destinations from '../components/Destinations/Destinations';
 import Blogs from '../components/Blogs/Blogs';
 import Contact from '../components/Contact Us/Contact';
+import FAQs from '../components/FAQs/FAQs';
 
 
 const routes = createBrowserRouter([
@@ -43,6 +44,10 @@ const routes = createBrowserRouter([
             {
                 path: '/contact',
                 element: <Contact />
+            },
+            {
+                path: '/faq',
+                element: <FAQs />
             }
         ]
     },
