@@ -14,21 +14,21 @@ const SubmitQuestion = () => {
         <div>
             <SectionHeading heading={heading} />
             <section className="w-11/12 mx-auto mb-10">
-                <div className='flex'>
-                    <section className="rounded-lg w-1/2">
+                <div className='flex flex-col lg:flex-row'>
+                    <section className="rounded-lg lg:w-1/2 w-full">
                         <img alt="Night" src={logo} className="rounded-lg" />
                     </section>
-                    <section className='w-1/2'>
-                        <main className="pl-10">
+                    <section className='lg:w-1/2 w-full'>
+                        <main className="lg:pl-10">
                             <div className="max-w-xl lg:max-w-3xl">
-                                <form >
-                                    <div className='grid grid-cols-2 gap-5'>
+                                <form>
+                                    <div className='grid lg:grid-cols-2 lg:gap-5'>
                                         <div>
                                             <label className="label">Full Name</label>
                                             <input type="text" placeholder="Full Name" className="input input-bordered input-success w-full" />
                                         </div>
                                         <div>
-                                            <label className="label">Phone No.</label>
+                                            <label className="label">Phone No</label>
                                             <input type="text" placeholder="Phone Number" className="input input-bordered input-success w-full" />
                                         </div>
                                         <div>
@@ -290,8 +290,8 @@ const SubmitQuestion = () => {
                                         <label className="label">Message</label>
                                         <textarea className="textarea textarea-primary w-full" rows='3' placeholder="Type your message here..."></textarea>
                                     </div>
-                                    <div className='text-center'>
-                                        <button className='btn btn-primary text-white'>send message</button>
+                                    <div className='text-center lg:mt-10 mt-5'>
+                                        <button className='btn btn-primary text-white capitalize'>send message</button>
                                     </div>
                                 </form>
                             </div>
