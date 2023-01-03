@@ -7,6 +7,7 @@ import UserRegister from '../components/Auth/UserRegister';
 import About from '../components/About/About';
 import Destinations from '../components/Destinations/Destinations';
 import Blogs from '../components/Blogs/Blogs';
+import Contact from '../components/Contact Us/Contact';
 
 
 const routes = createBrowserRouter([
@@ -38,6 +39,10 @@ const routes = createBrowserRouter([
             {
                 path: '/blog',
                 element: <Blogs />
+            },
+            {
+                path: '/contact',
+                element: <Contact />
             }
         ]
     },
