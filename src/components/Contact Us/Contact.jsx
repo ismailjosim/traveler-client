@@ -54,7 +54,7 @@ const Contact = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                         <div>
                             <div>
-                                <iframe className='w-full' height={500} src="https://maps.google.com/maps?q=Bhola,%20barishal,%20bangladesh&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0">
+                                <iframe className='w-full' title="myFrame" height={500} src="https://maps.google.com/maps?q=Bhola,%20barishal,%20bangladesh&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0">
                                 </iframe>
                             </div>
                         </div>
