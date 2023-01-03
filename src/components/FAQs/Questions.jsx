@@ -114,8 +114,6 @@ const Questions = () => {
                         </details>
                     </div>
                 </div>
-
-
             </div>
 
         </div>
