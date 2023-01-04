@@ -1,5 +1,6 @@
 import React from 'react';
 import PageHeading from '../../utilities/PageHeading';
+import Featured from '../Home/HomeSections/Featured';
 import Explore from './AboutSection/Explore';
 
 const About = () => {
@@ -7,6 +8,7 @@ const About = () => {
         <div>
             <PageHeading headTitle={'about us'}></PageHeading>
             <Explore />
+            <Featured />
         </div>
     );
 };
