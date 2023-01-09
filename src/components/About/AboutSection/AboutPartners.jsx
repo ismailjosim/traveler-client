@@ -15,7 +15,7 @@ const AboutPartners = () => {
 
 
     return (
-        <div className='grid grid-cols-5 w-11/12 mx-auto mb-10'>
+        <div className='grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 w-11/12 mx-auto mb-10'>
             {
                 brands.map((brand, idx) => {
                     return <div className='border p-5 flex justify-center items-center' key={idx}>
