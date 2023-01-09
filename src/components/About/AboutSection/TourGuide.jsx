@@ -1,6 +1,10 @@
 import React from 'react';
 import SectionHeading from '../../../utilities/SectionHeading';
-import '../../../styles/Custom.css'
+import '../../../styles/Custom.css';
+import img01 from '../../../assets/tour-guide/img1.jpg';
+import img02 from '../../../assets/tour-guide/img2.jpg';
+import img03 from '../../../assets/tour-guide/img3.jpg';
+import img04 from '../../../assets/tour-guide/img4.jpg';
 
 const TourGuide = () => {
     const heading = {
@@ -9,20 +13,49 @@ const TourGuide = () => {
         headingTwo: "Excellent Guides",
         describe: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
     }
+    const teams = [
+        {
+            name: "Horke Pels",
+            post: "Head Officer",
+            pic: img01
+        },
+        {
+            name: "Cacics Coold",
+            post: "Asst. Manager",
+            pic: img02
+        },
+        {
+            name: "Solden kalos",
+            post: "Senior Agent",
+            pic: img03
+        },
+        {
+            name: "Nelson Bam",
+            post: "Quality Assurance",
+            pic: img04
+        }
+    ]
+
+
 
     return (
-        <div>
+        <div className='w-11/12 mx-auto mb-20'>
             <SectionHeading heading={heading}></SectionHeading>
-            <div className="col-lg-3 col-md-6 col-sm-12 mb-4 slick-slide slick-cloned">
-                <div className="team-list rounded">
-                    <div className="team-image">
-                        <img src="images/team/img1.jpg" alt="team" />
-                    </div>
-                    <div className="team-content text-center p-3 bg-theme">
-                        <h4 className="mb-0 white">Salmon Thuir</h4>
-                        <p className="mb-0 white">Senior Agent</p>
-                    </div>
-                </div>
+            <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5'>
+                {
+                    teams.map((team, idx) => {
+                        const { name, post, pic } = team;
+                        return <div key={idx} className="transition-all duration-500 rounded-t-lg">
+                            <div className="overflow-hidden transition-all duration-500 rounded-t-lg">
+                                <img className='transition-all duration-500 hover:scale-110' src={pic} alt="team" />
+                            </div>
+                            <div className="relative z-[1] transition-all hover:-mt-4 duration-500 text-center p-3 bg-primary text-white rounded-b-lg cursor-pointer pt-5">
+                                <h4 className="mb-0 text-2xl font-bold capitalize">{name}</h4>
+                                <p className="mb-0">{post}</p>
+                            </div>
+                        </div>
+                    })
+                }
             </div>
         </div>
     );
