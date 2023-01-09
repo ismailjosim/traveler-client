@@ -56,11 +56,11 @@ const Testimonials = () => {
     return (
         <div className='testimonial'>
             <SectionHeading heading={heading} />
-            <div className="grid grid-cols-2 items-center mb-20">
+            <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 items-center mb-20 w-11/12 mx-auto">
                 <div>
                     <img src={testBg} alt="" />
                 </div>
-                <div className='w-11/12 mx-auto '>
+                <div className='w-11/12 mx-auto'>
                     <Slider {...settings}>
                         {
                             contents.map((content, idx) => {
