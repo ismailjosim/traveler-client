@@ -4,6 +4,7 @@ import Featured from '../Home/HomeSections/Featured';
 import Explore from './AboutSection/Explore';
 import Testimonials from './AboutSection/Testimonials';
 import TourGuide from './AboutSection/TourGuide';
+import AboutPartners from './AboutSection/AboutPartners';
 
 const About = () => {
     return (
@@ -13,6 +14,7 @@ const About = () => {
             <Featured />
             <TourGuide />
             <Testimonials />
+            <AboutPartners />
         </div>
     );
 };
