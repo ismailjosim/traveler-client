@@ -118,3 +118,10 @@
 .dot_overlay {
     background: #000000 url(../assets/images/dot-overlay.png) repeat;
 }
+
+.testimonial {
+    background-image: url(../assets/images/testimonial.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

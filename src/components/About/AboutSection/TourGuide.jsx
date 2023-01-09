@@ -47,7 +47,7 @@ const TourGuide = () => {
                         const { name, post, pic } = team;
                         return <div key={idx} className="transition-all duration-500 rounded-t-lg">
                             <div className="overflow-hidden transition-all duration-500 rounded-t-lg">
-                                <img className='transition-all duration-500 hover:scale-110' src={pic} alt="team" />
+                                <img className='transition-all duration-500 hover:scale-110 w-screen' src={pic} alt="team" />
                             </div>
                             <div className="relative z-[1] transition-all hover:-mt-4 duration-500 text-center p-3 bg-primary text-white rounded-b-lg cursor-pointer pt-5">
                                 <h4 className="mb-0 text-2xl font-bold capitalize">{name}</h4>
