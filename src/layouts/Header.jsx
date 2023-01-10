@@ -1,19 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import { AuthContext } from '../Contexts/AuthProvider';
 
 const Header = () => {
     // const { user, userLogout } = useContext(AuthContext);
+    const [isActive, setIsActive] = useState('/');
+
+    const activeClass = "hover:text-primary hover:bg-transparent uppercase font-semibold bg-primary text-white rounded-lg transition-all duration-500"
+    const normalClass = "hover:text-primary uppercase hover:bg-transparent font-semibold transition-all duration-500"
 
 
     const menuItems = <>
-        <li><Link className='hover:text-primary uppercase hover:bg-transparent font-semibold' to='/'>Home</Link></li>
-        <li><Link className='hover:text-primary uppercase hover:bg-transparent font-semibold' to='/about'>About</Link></li>
-        <li><Link className='hover:text-primary uppercase hover:bg-transparent font-semibold' to='/destination'>Destination</Link></li>
-        <li><Link className='hover:text-primary uppercase hover:bg-transparent font-semibold' to='/blog'>blog</Link></li>
-        <li><Link className='hover:text-primary uppercase hover:bg-transparent font-semibold' to='/contact'>Contact Us</Link></li>
-        <li><Link className='hover:text-primary uppercase hover:bg-transparent font-semibold' to='/faq'>FAQs</Link></li>
-        <li><Link className='hover:text-primary uppercase hover:bg-transparent font-semibold' to='/login'>login/register</Link></li>
+        <li><Link
+            onClick={() => setIsActive("/")}
+            className={isActive === "/" ? activeClass : normalClass} to='/'>Home</Link></li>
+        <li><Link
+            onClick={() => setIsActive("/about")}
+            className={isActive === "/about" ? activeClass : normalClass}
+            to='/about'>About</Link></li>
+        <li><Link
+            onClick={() => setIsActive("/destination")}
+            className={isActive === "/destination" ? activeClass : normalClass}
+            to='/destination'>Destination</Link></li>
+        <li><Link
+            onClick={() => setIsActive("/blog")}
+            className={isActive === "/blog" ? activeClass : normalClass}
+            to='/blog'>blog</Link></li>
+        <li><Link
+            onClick={() => setIsActive("/contact")}
+            className={isActive === "/contact" ? activeClass : normalClass}
+            to='/contact'>Contact Us</Link></li>
+        <li><Link
+            onClick={() => setIsActive("/faq")}
+            className={isActive === "/faq" ? activeClass : normalClass}
+            to='/faq'>FAQs</Link></li>
+        <li><Link
+            onClick={() => setIsActive("/login")}
+            className={isActive === "/login" ? activeClass : normalClass}
+            to='/login'>login/register</Link></li>
 
     </>
 
@@ -27,7 +51,9 @@ const Header = () => {
                     </svg>
                 </label>
                 <div className="navbar-start">
-                    <Link className='text-2xl font-extrabold uppercase' to='/'>Traveler</Link>
+                    <Link
+                        onClick={() => setIsActive("/")}
+                        className='text-2xl font-extrabold uppercase' to='/'>Traveler</Link>
                 </div>
                 <div className="navbar-end">
                     <div className="navbar-center hidden lg:flex">
