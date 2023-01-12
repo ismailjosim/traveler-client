@@ -1,43 +1,19 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 // import { AuthContext } from '../Contexts/AuthProvider';
 
 const Header = () => {
     // const { user, userLogout } = useContext(AuthContext);
     const [isActive, setIsActive] = useState('/');
 
-    const activeClass = "hover:text-primary hover:bg-primary uppercase font-semibold bg-primary text-white rounded-lg transition-all duration-500"
-    const normalClass = "hover:text-primary uppercase hover:bg-transparent font-semibold transition-all duration-500"
-
-
     const menuItems = <>
-        <li><Link
-            onClick={() => setIsActive("/")}
-            className={isActive === "/" ? activeClass : normalClass} to='/'>Home</Link></li>
-        <li><Link
-            onClick={() => setIsActive("/about")}
-            className={isActive === "/about" ? activeClass : normalClass}
-            to='/about'>About</Link></li>
-        <li><Link
-            onClick={() => setIsActive("/destination")}
-            className={isActive === "/destination" ? activeClass : normalClass}
-            to='/destination'>Destination</Link></li>
-        <li><Link
-            onClick={() => setIsActive("/blog")}
-            className={isActive === "/blog" ? activeClass : normalClass}
-            to='/blog'>blog</Link></li>
-        <li><Link
-            onClick={() => setIsActive("/contact")}
-            className={isActive === "/contact" ? activeClass : normalClass}
-            to='/contact'>Contact Us</Link></li>
-        <li><Link
-            onClick={() => setIsActive("/faq")}
-            className={isActive === "/faq" ? activeClass : normalClass}
-            to='/faq'>FAQs</Link></li>
-        <li><Link
-            onClick={() => setIsActive("/login")}
-            className={isActive === "/login" ? activeClass : normalClass}
-            to='/login'>login/register</Link></li>
+        <li><NavLink className="hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg" to='/'>Home</NavLink></li>
+        <li><NavLink className="hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg" to='/about'>About</NavLink></li>
+        <li><NavLink className="hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg" to='/destination'>Destination</NavLink></li>
+        <li><NavLink className="hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg" to='/blog'>blog</NavLink></li>
+        <li><NavLink className="hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg" to='/contact'>Contact Us</NavLink></li>
+        <li><NavLink className="hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg" to='/faq'>FAQs</NavLink></li>
+        <li><NavLink className="hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg" to='/login'>login/register</NavLink></li>
 
     </>
 
