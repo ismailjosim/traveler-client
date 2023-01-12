@@ -6,7 +6,7 @@ const Header = () => {
     // const { user, userLogout } = useContext(AuthContext);
     const [isActive, setIsActive] = useState('/');
 
-    const activeClass = "hover:text-primary hover:bg-transparent uppercase font-semibold bg-primary text-white rounded-lg transition-all duration-500"
+    const activeClass = "hover:text-primary hover:bg-primary uppercase font-semibold bg-primary text-white rounded-lg transition-all duration-500"
     const normalClass = "hover:text-primary uppercase hover:bg-transparent font-semibold transition-all duration-500"
 
 
