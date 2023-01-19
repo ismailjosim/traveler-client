@@ -26,7 +26,7 @@ const Blogs = () => {
             <div className="w-11/12 mx-auto grid grid-cols-3 gap-5">
                 <div className='col-span-2'>
                     <div className='flex justify-between items-center mb-5'>
-                        <h3>Show 1-5 of 80 results</h3>
+                        <h3>Show 1-5 of {blogs.length} results</h3>
                         <div className='flex gap-2'>
                             <div className='active:bg-secondary bg-neutral p-2 rounded-md text-white hover:bg-secondary transition-all duration-500'>
                                 <FaBars />
