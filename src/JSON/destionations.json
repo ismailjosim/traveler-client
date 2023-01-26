@@ -2,46 +2,55 @@
 	{
 		"country": "Italy",
 		"place": "Caspian Valley",
-		"tourPlace": 18
+		"tourPlace": 18,
+		"thumbnail": "https://i.ibb.co/nwQvr11/place01.jpg"
 	},
 	{
 		"country": "Bali",
 		"place": "Indonesia",
-		"tourPlace": 18
+		"tourPlace": 18,
+		"thumbnail": "https://i.ibb.co/SX9Lk0P/place02.jpg"
 	},
 	{
 		"country": "Tokyo",
 		"place": "Japan",
-		"tourPlace": 20
+		"tourPlace": 20,
+		"thumbnail": "https://i.ibb.co/Q8LLHTQ/place03.jpg"
 	},
 	{
 		"country": "Moscow",
 		"place": "Russia",
-		"tourPlace": 15
+		"tourPlace": 15,
+		"thumbnail": "https://i.ibb.co/7pMf3SY/place04.jpg"
 	},
 	{
 		"country": "Florida",
 		"place": "America",
-		"tourPlace": 32
+		"tourPlace": 32,
+		"thumbnail": "https://i.ibb.co/K7Cbn32/place05.jpg"
 	},
 	{
 		"country": "Bali",
 		"place": "Indonesia",
-		"tourPlace": 14
+		"tourPlace": 14,
+		"thumbnail": "https://i.ibb.co/g6ps6Vf/place06.jpg"
 	},
 	{
 		"country": "Italy",
 		"place": "Caspian Valley",
-		"tourPlace": 18
+		"tourPlace": 18,
+		"thumbnail": "https://i.ibb.co/y0NdHqM/place07.jpg"
 	},
 	{
 		"country": "Tokyo",
 		"place": "Japan",
-		"tourPlace": 21
+		"tourPlace": 21,
+		"thumbnail": "https://i.ibb.co/CnLLWWF/place08.jpg"
 	},
 	{
 		"country": "Moscow",
 		"place": "Russia",
-		"tourPlace": 15
+		"tourPlace": 15,
+		"thumbnail": "https://i.ibb.co/hLsM5TF/place09.jpg"
 	}
 ]
