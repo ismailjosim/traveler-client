@@ -5,7 +5,7 @@ import img01 from '../../../assets/destinations/destination1.jpg'
 import img02 from '../../../assets/destinations/destination2.jpg'
 import img03 from '../../../assets/destinations/destination15.jpg'
 import img04 from '../../../assets/destinations/destination16.jpg'
-import { PhotoProvider, PhotoView } from 'react-photo-view';
+
 
 const Destination = () => {
 

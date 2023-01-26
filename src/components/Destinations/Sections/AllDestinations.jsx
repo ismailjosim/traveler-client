@@ -17,7 +17,7 @@ const AllDestinations = () => {
             <div className='grid lg:grid-cols-3'>
                 <div className="trend-item1">
                     <div className="trend-image position-relative rounded">
-                        <img src={img01} alt="image" />
+                        <img src={img01} alt="" />
                         <div className="trend-content d-flex align-items-center justify-content-between position-absolute bottom-0 p-4 w-100 z-index">
                             <div className="trend-content-title">
                                 <h5 className="mb-0">

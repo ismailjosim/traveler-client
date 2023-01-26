@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
     // const { user, userLogout } = useContext(AuthContext);
-    const [isActive, setIsActive] = useState('/');
+    const [setIsActive] = useState('/');
 
     const menuItems = <>
         <li><NavLink className="hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg" to='/'>Home</NavLink></li>
