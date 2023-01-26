@@ -37,8 +37,8 @@ const SubmitQuestion = () => {
                                         </div>
                                         <div>
                                             <label className="label">Destination</label>
-                                            <select className="select select-primary w-full text-base">
-                                                <option disabled selected>Select Location</option>
+                                            <select className="select select-primary w-full text-base" defaultValue={"Select Location"}>
+                                                <option disabled >Select Location</option>
                                                 <option value="Afghanistan">Afghanistan</option>
                                                 <option value="Åland Islands">Åland Islands</option>
                                                 <option value="Albania">Albania</option>

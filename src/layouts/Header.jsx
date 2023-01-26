@@ -14,7 +14,6 @@ const Header = () => {
         <li><NavLink className="hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg" to='/contact'>Contact Us</NavLink></li>
         <li><NavLink className="hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg" to='/faq'>FAQs</NavLink></li>
         <li><NavLink className="hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg" to='/login'>login/register</NavLink></li>
-
     </>
 
 

@@ -16,10 +16,6 @@ const Blogs = () => {
     })
 
 
-
-
-
-
     return (
         <div>
             <PageHeading headTitle={'latest blogs'}></PageHeading>
@@ -36,7 +32,7 @@ const Blogs = () => {
                             </div>
                         </div>
                         <select className="select select-bordered w-full max-w-xs">
-                            <option disabled>Sort By</option>
+                            <option>Sort By</option>
                             <option>Date</option>
                             <option>category</option>
                             <option>average rating</option>
