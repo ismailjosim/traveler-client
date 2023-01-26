@@ -127,3 +127,12 @@
 }
 
 /* destination card section */
+.destination_item:hover .color-overlay {
+    height: 100%;
+    transition: all ease-in-out 0.5s;
+}
+
+.destination_item:hover img {
+    transform: scale(1.2);
+    transition: all ease-in-out 0.5s;
+}
