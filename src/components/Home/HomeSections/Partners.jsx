@@ -48,7 +48,7 @@ const Partners = () => {
                 <SectionHeading heading={heading} />
                 <div className='flex justify-center items-center gap-10 lg:gap-20'>
                     {
-                        data.map(activity => <div>
+                        data.map(activity => <div key={activity.id}>
                             <img className='w-24' src={activity.img} alt={activity.title} />
                         </div>
                         )

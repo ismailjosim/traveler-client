@@ -54,11 +54,11 @@ const Activity = () => {
         <div className='bg-slate-200 pb-10'>
             <div className='w-11/12 mx-auto my-10'>
                 <SectionHeading heading={heading} />
-                <div className='flex justify-center items-center gap-10'>
+                <div className='grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-10'>
                     {
-                        data.map(activity => <div className='bottom_animation px-10 py-5 rounded-md shadow-lg bg-white text-center flex flex-col justify-center items-center'>
-                            <img className='w-16 h-16' src={activity.img} alt={activity.title} />
-                            <h3 className=' text-xl font-bold capitalize mt-2'>{activity.title}</h3>
+                        data.map(activity => <div key={activity.id} className='bottom_animation px-10 py-5 rounded-md shadow-lg bg-white text-center flex flex-col justify-center items-center'>
+                            <img className='w-16' src={activity.img} alt={activity.title} />
+                            <h3 className=' lg:text-xl text-base font-bold capitalize mt-2'>{activity.title}</h3>
                         </div>
                         )
                     }
