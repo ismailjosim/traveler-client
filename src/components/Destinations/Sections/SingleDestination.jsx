@@ -1,11 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 const SingleDestination = () => {
-    return (
-        <div>
+	return <div></div>
+}
 
-        </div>
-    );
-};
-
-export default SingleDestination;
+export default SingleDestination
