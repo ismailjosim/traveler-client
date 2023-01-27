@@ -15,7 +15,9 @@ const AllDestinations = () => {
 	const { data: destinations = [] } = useQuery({
 		queryKey: ['destinations'],
 		queryFn: async () => {
-			const res = await fetch('http://localhost:5000/destinations')
+			const res = await fetch(
+				'https://travel-server-woad.vercel.app/destinations',
+			)
 			const data = await res.json()
 			return data?.destinations
 		},

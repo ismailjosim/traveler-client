@@ -132,3 +132,7 @@
     transform: scale(1.2);
     transition: all ease-in-out 0.5s;
 }
+
+.top_inherit {
+    top: inherit !important;
+}
