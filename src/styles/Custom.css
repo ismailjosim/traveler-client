@@ -111,10 +111,6 @@
 
 /* section heading */
 
-.top_inherit {
-    top: inherit !important;
-}
-
 .dot_overlay {
     background: #000000 url(../assets/images/dot-overlay.png) repeat;
 }
