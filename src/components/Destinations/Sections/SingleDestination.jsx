@@ -1,6 +1,12 @@
 import React from 'react'
 import { BiMap } from 'react-icons/bi'
 import { BsFillStarFill } from 'react-icons/bs'
+import {
+	FaFacebookF,
+	FaGooglePlusG,
+	FaInstagram,
+	FaTwitter,
+} from 'react-icons/fa'
 import { GoCheck } from 'react-icons/go'
 import { RxCross2 } from 'react-icons/rx'
 import imgDetails from '../../../assets/destinations/trending-large.jpg'
@@ -10,7 +16,7 @@ const SingleDestination = () => {
 	return (
 		<div>
 			<PageHeading headTitle={'Bangkok - Thailand'} />
-			<div className='w-11/12 mx-auto grid lg:grid-cols-3 gap-5 mt-5'>
+			<div className='w-11/12 mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-10 mt-5'>
 				<div className='col-span-2'>
 					<h2 className='text-5xl capitalize font-semibold'>
 						Bangkok Thailand
@@ -102,8 +108,124 @@ const SingleDestination = () => {
 							<img src={imgDetails} alt='' />
 						</div>
 					</div>
+					<h4 className='text-2xl font-medium my-4'>Map</h4>
+					<div></div>
 				</div>
-				<div className='bg-secondary col-span-1'>row01</div>
+				<div className='col-span-1 w-full mb-10'>
+					<div className='card shadow-md rounded-lg'>
+						<figure className='py-5'>
+							<img
+								src={imgDetails}
+								alt='Shoes'
+								className='rounded-full w-32 h-32 ring ring-primary ring-offset-base-100 ring-offset-2'
+							/>
+						</figure>
+						<div className='card-body items-center text-center'>
+							<h2 className='card-title'>Relson Dulux</h2>
+							<p>
+								Hello, We’re content writer who is fascinated by content
+								fashion, celebrity and lifestyle. We helps clients bring the
+								right content to the right people.
+							</p>
+							<div className='card-actions mt-5 gap-5'>
+								<span className='bg-primary p-2 rounded-lg hover:bg-secondary transition-all duration-500 ease-in-out'>
+									<FaFacebookF className='text-white text-xl' />
+								</span>
+								<span className='bg-primary p-2 rounded-lg hover:bg-secondary transition-all duration-500 ease-in-out'>
+									<FaGooglePlusG className='text-white text-xl' />
+								</span>
+								<span className='bg-primary p-2 rounded-lg hover:bg-secondary transition-all duration-500 ease-in-out'>
+									<FaTwitter className='text-white text-xl' />
+								</span>
+								<span className='bg-primary p-2 rounded-lg hover:bg-secondary transition-all duration-500 ease-in-out'>
+									<FaInstagram className='text-white text-xl' />
+								</span>
+							</div>
+						</div>
+					</div>
+					<div className='my-5'>
+						<h4 className='text-2xl font-medium my-4'>All Categories</h4>
+						<ul className='flex flex-col gap-5'>
+							<li className='hover:bg-primary hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer'>
+								Traveling
+							</li>
+							<li className='hover:bg-primary hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer'>
+								Tour Position
+							</li>
+							<li className='hover:bg-primary hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer'>
+								Trip Landmark
+							</li>
+							<li className='hover:bg-primary hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer'>
+								Adventurous
+							</li>
+							<li className='hover:bg-primary hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer'>
+								Address and Map
+							</li>
+							<li className='hover:bg-primary hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer'>
+								Booking Requests
+							</li>
+							<li className='hover:bg-primary hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer'>
+								Booking Requests
+							</li>
+							<li className='hover:bg-primary hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer'>
+								Wildlife Reservation
+							</li>
+							<li className='hover:bg-primary hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer'>
+								Top Destination
+							</li>
+						</ul>
+					</div>
+					<div className='my-5'>
+						<h4 className='text-2xl font-medium my-4'>Tags</h4>
+						<ul className='text-sm font-medium'>
+							<span className='hover:bg-primary inline-block hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer mr-2 mb-2'>
+								Tour
+							</span>
+							<span className='hover:bg-primary inline-block hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer mr-2 mb-2'>
+								Rental
+							</span>
+							<span className='hover:bg-primary inline-block hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer mr-2 mb-2'>
+								City
+							</span>
+							<span className='hover:bg-primary inline-block hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer mr-2 mb-2'>
+								Batch
+							</span>
+							<span className='hover:bg-primary inline-block hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer mr-2 mb-2'>
+								Activity
+							</span>
+							<span className='hover:bg-primary inline-block hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer mr-2 mb-2'>
+								Museum
+							</span>
+							<span className='hover:bg-primary inline-block hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer mr-2 mb-2'>
+								Beauty
+							</span>
+							<span className='hover:bg-primary inline-block hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer mr-2 mb-2'>
+								Classic
+							</span>
+							<span className='hover:bg-primary inline-block hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer mr-2 mb-2'>
+								Creative
+							</span>
+							<span className='hover:bg-primary inline-block hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer mr-2 mb-2'>
+								Designs
+							</span>
+							<span className='hover:bg-primary inline-block hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer mr-2 mb-2'>
+								Featured
+							</span>
+							<span className='hover:bg-primary inline-block hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer mr-2 mb-2'>
+								Free Style
+							</span>
+							<span className='hover:bg-primary inline-block hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer mr-2 mb-2'>
+								Programs
+							</span>
+							<span className='hover:bg-primary inline-block hover:text-white rounded-md p-3 border hover:border-primary transition-all duration-500 ease-in-out cursor-pointer mr-2 mb-2'>
+								Travel
+							</span>
+						</ul>
+					</div>
+					<div className='w-full rounded-lg overflow-hidden'>
+						<img src={imgDetails} alt='' />
+					</div>
+				</div>
 			</div>
 		</div>
 	)
