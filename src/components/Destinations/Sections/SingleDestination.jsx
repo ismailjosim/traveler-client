@@ -10,6 +10,7 @@ import {
 import { GoCheck } from 'react-icons/go'
 import { RxCross2 } from 'react-icons/rx'
 import imgDetails from '../../../assets/destinations/trending-large.jpg'
+import Button from '../../../utilities/Button'
 import PageHeading from '../../../utilities/PageHeading'
 
 const SingleDestination = () => {
@@ -109,7 +110,81 @@ const SingleDestination = () => {
 						</div>
 					</div>
 					<h4 className='text-2xl font-medium my-4'>Map</h4>
-					<div></div>
+					<div className='my-10'>Map goes here</div>
+					<h4 className='text-2xl font-medium my-4'>Average Reviews</h4>
+					<div className='my-10 bg-accent text-white px-5 py-10 text-center rounded-lg text-2xl'>
+						<h3>2.2/5</h3>
+						<h4 className='my-2 font-semibold'>
+							"Feel So Much Worst Than Thinking"
+						</h4>
+						<p className='text-base'>From 40 Reviews</p>
+					</div>
+					<div className='flex flex-col gap-2 mb-5'>
+						<div>
+							<span>Cleanliness</span>
+							<progress
+								className='progress progress-primary w-full h-4'
+								value='4'
+								max='5'
+							></progress>
+						</div>
+						<div>
+							<span>Facilities</span>
+							<progress
+								className='progress progress-primary w-full h-4'
+								value='3'
+								max='5'
+							></progress>
+						</div>
+						<div>
+							<span>Value for money</span>
+							<progress
+								className='progress progress-primary w-full h-4'
+								value='5'
+								max='5'
+							></progress>
+						</div>
+						<div>
+							<span>Service</span>
+							<progress
+								className='progress progress-primary w-full h-4'
+								value='2'
+								max='5'
+							></progress>
+						</div>
+						<div>
+							<span>Location</span>
+							<progress
+								className='progress progress-primary w-full h-4'
+								value='3'
+								max='4'
+							></progress>
+						</div>
+					</div>
+					<div className='mb-10'>
+						<h4 className='text-2xl font-medium my-4'>Write A Review</h4>
+						<form className='flex flex-col gap-5'>
+							<div className='grid lg:grid-cols-2 grid-cols-1 gap-5'>
+								<input
+									type='text'
+									placeholder='Name'
+									className='input input-bordered border-neutral text-primary input-primary w-full focus:outline-none focus:border-primary'
+								/>
+								<input
+									type='email'
+									placeholder='email'
+									className='input input-bordered border-neutral text-primary input-primary w-full focus:outline-none focus:border-primary'
+								/>
+							</div>
+							<textarea
+								className='textarea textarea-primary focus:outline-none focus:border-primary w-full h-20 border-neutral resize-none'
+								placeholder='Write Your Comment'
+							></textarea>
+							<div>
+								<Button btnText='Submit Review' destination='/single' />
+							</div>
+						</form>
+					</div>
 				</div>
 				<div className='col-span-1 w-full mb-10'>
 					<div className='card shadow-md rounded-lg'>
