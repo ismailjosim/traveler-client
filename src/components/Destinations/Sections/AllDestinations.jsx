@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../../../styles/Custom.css'
 import SectionHeading from '../../../utilities/SectionHeading'
 
@@ -30,7 +31,7 @@ const AllDestinations = () => {
 				{destinations.map((item) => {
 					const { _id, country, place, tourPlace, thumbnail } = item
 					return (
-						<div key={_id} className='destination_item'>
+						<Link to={`/destination/id`} key={_id} className='destination_item'>
 							<div className='transition-all relative rounded-xl ease-in-out duration-500 overflow-hidden'>
 								<img
 									className='transition-all ease-in-out duration-500 w-full'
@@ -61,7 +62,7 @@ const AllDestinations = () => {
 						'
 								></div>
 							</div>
-						</div>
+						</Link>
 					)
 				})}
 			</div>

@@ -50,7 +50,7 @@ const routes = createBrowserRouter([
 				element: <FAQs />,
 			},
 			{
-				path: '/single',
+				path: `/destination/id`,
 				element: <SingleDestination />,
 			},
 		],
