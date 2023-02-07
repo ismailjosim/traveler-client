@@ -136,3 +136,16 @@
 .top_inherit {
     top: inherit !important;
 }
+
+/* Homepage form section */
+.section-shape {
+    background-image: url(../assets/images/shape-pat.png);
+    position: absolute;
+    top: -96px;
+    left: 0;
+    width: 100%;
+    height: 96px;
+    background-size: contain;
+    background-repeat: repeat-x;
+    z-index: 1;
+}

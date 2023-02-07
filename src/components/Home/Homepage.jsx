@@ -6,11 +6,13 @@ import Hero from './HomeSections/Hero'
 import Packages from './HomeSections/Packages'
 import Partners from './HomeSections/Partners'
 import TopDeals from './HomeSections/TopDeals'
+import HolidayForm from './HomeSections/HolidayForm';
 
 const Homepage = () => {
 	return (
 		<div>
 			<Hero />
+			<HolidayForm />
 			<Featured />
 			<Destination />
 			<Packages />
