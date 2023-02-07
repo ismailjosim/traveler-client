@@ -15,7 +15,7 @@ const HolidayForm = () => {
                             <span className='text-lg font-semibold'> Find Your Holidays</span>
                         </h4>
                     </div>
-                    <div className='flex justify-between gap-10'>
+                    <div className='flex gap-10'>
                         <div>
                             <select className="select w-full max-w-xs">
                                 <option>Destination</option>
