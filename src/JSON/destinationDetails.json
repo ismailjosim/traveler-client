@@ -6,13 +6,13 @@
 		"rating": 1186,
 		"picture": "https://i.ibb.co/nwQvr11/place01.jpg",
 		"details": "Machu Picchu is an Incan citadel set high in the Andes Mountains in Peru, above the Urubamba River valley. Built in the 15th century and later abandoned, it's renowned for its sophisticated dry-stone walls that fuse huge blocks without the use of mortar, intriguing buildings that play on astronomical alignments and panoramic views. Its exact former use remains a mystery.",
-		"package": [
+		"packageIncludes": [
 			"Air Fares",
 			"3 Nights Hotel Accommodation",
 			"Tour Guide",
 			"Entrance Fees"
 		],
-		"return": [
+		"returnPolicy": [
 			"Guide Service Fee",
 			"Driver Service Fee",
 			"Any Private Expenses",
@@ -36,7 +36,7 @@
 			"Tour Guide",
 			"Entrance Fees"
 		],
-		"return": [
+		"returnPolicy": [
 			"Guide Service Fee",
 			"Driver Service Fee",
 			"Any Private Expenses",
@@ -60,7 +60,7 @@
 			"Tour Guide",
 			"Entrance Fees"
 		],
-		"return": [
+		"returnPolicy": [
 			"Guide Service Fee",
 			"Driver Service Fee",
 			"Any Private Expenses",
@@ -84,7 +84,7 @@
 			"Tour Guide",
 			"Entrance Fees"
 		],
-		"return": [
+		"returnPolicy": [
 			"Guide Service Fee",
 			"Driver Service Fee",
 			"Any Private Expenses",
@@ -108,7 +108,7 @@
 			"Tour Guide",
 			"Entrance Fees"
 		],
-		"return": [
+		"returnPolicy": [
 			"Guide Service Fee",
 			"Driver Service Fee",
 			"Any Private Expenses",
@@ -132,7 +132,7 @@
 			"Tour Guide",
 			"Entrance Fees"
 		],
-		"return": [
+		"returnPolicy": [
 			"Guide Service Fee",
 			"Driver Service Fee",
 			"Any Private Expenses",
@@ -156,7 +156,7 @@
 			"Tour Guide",
 			"Entrance Fees"
 		],
-		"return": [
+		"returnPolicy": [
 			"Guide Service Fee",
 			"Driver Service Fee",
 			"Any Private Expenses",
@@ -180,7 +180,7 @@
 			"Tour Guide",
 			"Entrance Fees"
 		],
-		"return": [
+		"returnPolicy": [
 			"Guide Service Fee",
 			"Driver Service Fee",
 			"Any Private Expenses",
@@ -204,7 +204,7 @@
 			"Tour Guide",
 			"Entrance Fees"
 		],
-		"return": [
+		"returnPolicy": [
 			"Guide Service Fee",
 			"Driver Service Fee",
 			"Any Private Expenses",

@@ -50,8 +50,9 @@ const routes = createBrowserRouter([
 				element: <FAQs />,
 			},
 			{
-				path: `/destination/id`,
-				element: <SingleDestination />,
+				path: `/destination/:id`,
+				loader: ({ params }) => fetch(`http://localhost:5000/destination/${ params.id }`),
+				element: <SingleDestination />
 			},
 		],
 	},

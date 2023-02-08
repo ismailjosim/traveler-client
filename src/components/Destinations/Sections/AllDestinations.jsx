@@ -29,9 +29,9 @@ const AllDestinations = () => {
 			<SectionHeading heading={ heading } />
 			<div className='w-11/12 mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10'>
 				{ destinations.map((item) => {
-					const { _id, country, place, tourPlace, thumbnail } = item
+					const { _id, country, place, tourPlace, thumbnail, placeId } = item
 					return (
-						<Link to={ `/destination/id` } key={ _id } className='destination_item'>
+						<Link to={ `/destination/${ placeId }` } key={ _id } className='destination_item'>
 							<div className='transition-all relative rounded-xl ease-in-out duration-500 overflow-hidden'>
 								<img
 									className='transition-all ease-in-out duration-500 w-full'
