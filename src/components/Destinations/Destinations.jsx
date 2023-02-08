@@ -5,7 +5,7 @@ import AllDestinations from './Sections/AllDestinations'
 const Destinations = () => {
 	return (
 		<div>
-			<PageHeading headTitle={'destination list'} />
+			<PageHeading headTitle={ 'destination list' } />
 			<AllDestinations />
 		</div>
 	)

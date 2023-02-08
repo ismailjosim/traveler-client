@@ -1,12 +1,7 @@
 import React from 'react'
 import { BiMap } from 'react-icons/bi'
 import { BsFillStarFill } from 'react-icons/bs'
-import {
-	FaFacebookF,
-	FaGooglePlusG,
-	FaInstagram,
-	FaTwitter,
-} from 'react-icons/fa'
+import { FaFacebookF, FaGooglePlusG, FaInstagram, FaTwitter } from 'react-icons/fa'
 import { GoCheck } from 'react-icons/go'
 import { RxCross2 } from 'react-icons/rx'
 import imgDetails from '../../../assets/destinations/trending-large.jpg'
@@ -16,7 +11,7 @@ import PageHeading from '../../../utilities/PageHeading'
 const SingleDestination = () => {
 	return (
 		<div>
-			<PageHeading headTitle={'Bangkok - Thailand'} />
+			<PageHeading headTitle={ 'Bangkok - Thailand' } />
 			<div className='w-11/12 mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-10 mt-5'>
 				<div className='col-span-2'>
 					<h2 className='text-5xl capitalize font-semibold'>
@@ -35,7 +30,7 @@ const SingleDestination = () => {
 						<span>(1,186 Reviews)</span>
 					</div>
 					<div className='w-full rounded-lg overflow-hidden'>
-						<img className='w-full' src={imgDetails} alt='' />
+						<img className='w-full' src={ imgDetails } alt='' />
 					</div>
 					<div className='my-5'>
 						<h4 className='text-xl font-semibold my-5'>Description</h4>
@@ -103,10 +98,10 @@ const SingleDestination = () => {
 					<h4 className='text-2xl font-bold my-4'>Gallery</h4>
 					<div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5'>
 						<div className='w-full rounded-lg overflow-hidden'>
-							<img src={imgDetails} alt='' />
+							<img src={ imgDetails } alt='' />
 						</div>
 						<div className='w-full rounded-lg overflow-hidden'>
-							<img src={imgDetails} alt='' />
+							<img src={ imgDetails } alt='' />
 						</div>
 					</div>
 					<h4 className='text-2xl font-medium my-4'>Map</h4>
@@ -190,7 +185,7 @@ const SingleDestination = () => {
 					<div className='card shadow-md rounded-lg'>
 						<figure className='py-5'>
 							<img
-								src={imgDetails}
+								src={ imgDetails }
 								alt='Shoes'
 								className='rounded-full w-32 h-32 ring ring-primary ring-offset-base-100 ring-offset-2'
 							/>
@@ -298,7 +293,7 @@ const SingleDestination = () => {
 						</ul>
 					</div>
 					<div className='w-full rounded-lg overflow-hidden'>
-						<img src={imgDetails} alt='' />
+						<img src={ imgDetails } alt='' />
 					</div>
 				</div>
 			</div>
