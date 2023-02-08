@@ -26,16 +26,16 @@ const AllDestinations = () => {
 
 	return (
 		<div className='mb-10'>
-			<SectionHeading heading={heading} />
+			<SectionHeading heading={ heading } />
 			<div className='w-11/12 mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10'>
-				{destinations.map((item) => {
+				{ destinations.map((item) => {
 					const { _id, country, place, tourPlace, thumbnail } = item
 					return (
-						<Link to={`/destination/id`} key={_id} className='destination_item'>
+						<Link to={ `/destination/id` } key={ _id } className='destination_item'>
 							<div className='transition-all relative rounded-xl ease-in-out duration-500 overflow-hidden'>
 								<img
 									className='transition-all ease-in-out duration-500 w-full'
-									src={thumbnail}
+									src={ thumbnail }
 									alt='destination'
 								/>
 								<div className='trend-content flex items-center justify-between absolute bottom-0 p-6 w-full z-[1]'>
@@ -45,15 +45,15 @@ const AllDestinations = () => {
 												href='destination-detail.html'
 												className='text-secondary'
 											>
-												{country}
+												{ country }
 											</a>
 										</h5>
 										<h3 className='mb-0 text-white text-2xl font-bold capitalize '>
-											{place}
+											{ place }
 										</h3>
 									</div>
 									<span className='text-white bg-primary p-1 px-2 rounded-md'>
-										{tourPlace} Tours
+										{ tourPlace } Tours
 									</span>
 								</div>
 								<div
@@ -64,7 +64,7 @@ const AllDestinations = () => {
 							</div>
 						</Link>
 					)
-				})}
+				}) }
 			</div>
 		</div>
 	)

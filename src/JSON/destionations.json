@@ -1,8 +1,8 @@
 [
 	{
-		"country": "Italy",
+		"country": "peru",
 		"placeId": 101,
-		"place": "Caspian Valley",
+		"place": "Machu Picchu",
 		"tourPlace": 18,
 		"thumbnail": "https://i.ibb.co/nwQvr11/place01.jpg"
 	},
@@ -30,35 +30,35 @@
 	{
 		"country": "Florida",
 		"placeId": 105,
-		"place": "America",
+		"place": "USA",
 		"tourPlace": 32,
 		"thumbnail": "https://i.ibb.co/K7Cbn32/place05.jpg"
 	},
 	{
-		"country": "Bali",
+		"country": "Bora Bora",
 		"placeId": 106,
-		"place": "Indonesia",
+		"place": "French",
 		"tourPlace": 14,
 		"thumbnail": "https://i.ibb.co/g6ps6Vf/place06.jpg"
 	},
 	{
-		"country": "Italy",
+		"country": "Westminster Bridge",
 		"placeId": 107,
-		"place": "Caspian Valley",
+		"place": "London",
 		"tourPlace": 18,
 		"thumbnail": "https://i.ibb.co/y0NdHqM/place07.jpg"
 	},
 	{
-		"country": "Tokyo",
+		"country": "Taj Mahal",
 		"placeId": 108,
-		"place": "Japan",
+		"place": "India",
 		"tourPlace": 21,
 		"thumbnail": "https://i.ibb.co/CnLLWWF/place08.jpg"
 	},
 	{
-		"country": "Moscow",
+		"country": "Stonehenge",
 		"placeId": 109,
-		"place": "Russia",
+		"place": "England",
 		"tourPlace": 15,
 		"thumbnail": "https://i.ibb.co/hLsM5TF/place09.jpg"
 	}

@@ -13,6 +13,7 @@ const SingleDestination = () => {
 		<div>
 			<PageHeading headTitle={ 'Bangkok - Thailand' } />
 			<div className='w-11/12 mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-10 mt-5'>
+				{/*section: Destination Title */ }
 				<div className='col-span-2'>
 					<h2 className='text-5xl capitalize font-semibold'>
 						Bangkok Thailand
@@ -29,9 +30,13 @@ const SingleDestination = () => {
 						</p>
 						<span>(1,186 Reviews)</span>
 					</div>
+
+					{/*section: Destination Image */ }
 					<div className='w-full rounded-lg overflow-hidden'>
 						<img className='w-full' src={ imgDetails } alt='' />
 					</div>
+
+					{/*section: Destination Description */ }
 					<div className='my-5'>
 						<h4 className='text-xl font-semibold my-5'>Description</h4>
 						<p className=''>
@@ -48,7 +53,9 @@ const SingleDestination = () => {
 							century who is thought to have scrambled parts of Cicero's De
 							Finibus Bonorum et Malorum for use in a type specimen book.
 						</p>
+
 						<div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5'>
+							{/*section: Price Includes */ }
 							<div className='bg-slate-100 rounded-xl p-5'>
 								<h4 className='text-xl font-medium mb-4'>Price Includes</h4>
 								<ul className='flex flex-col gap-2'>
@@ -70,6 +77,8 @@ const SingleDestination = () => {
 									</li>
 								</ul>
 							</div>
+
+							{/*section: Departure details */ }
 							<div className='bg-slate-100 rounded-xl p-5'>
 								<h4 className='text-xl font-medium mb-4'>
 									Departure & Return Location
@@ -95,6 +104,8 @@ const SingleDestination = () => {
 							</div>
 						</div>
 					</div>
+
+					{/*section: Gallery images */ }
 					<h4 className='text-2xl font-bold my-4'>Gallery</h4>
 					<div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5'>
 						<div className='w-full rounded-lg overflow-hidden'>
@@ -104,8 +115,11 @@ const SingleDestination = () => {
 							<img src={ imgDetails } alt='' />
 						</div>
 					</div>
+					{/*section: Map locations details */ }
 					<h4 className='text-2xl font-medium my-4'>Map</h4>
 					<div className='my-10'>Map goes here</div>
+
+					{/* Review details */ }
 					<h4 className='text-2xl font-medium my-4'>Average Reviews</h4>
 					<div className='my-10 bg-accent text-white px-5 py-10 text-center rounded-lg text-2xl'>
 						<h3>2.2/5</h3>
@@ -156,6 +170,9 @@ const SingleDestination = () => {
 							></progress>
 						</div>
 					</div>
+
+
+					{/* Review form section details */ }
 					<div className='mb-10'>
 						<h4 className='text-2xl font-medium my-4'>Write A Review</h4>
 						<form className='flex flex-col gap-5'>
@@ -181,7 +198,10 @@ const SingleDestination = () => {
 						</form>
 					</div>
 				</div>
+
+				{/* Header: Right side  content */ }
 				<div className='col-span-1 w-full mb-10'>
+					{/* section:  content section */ }
 					<div className='card shadow-md rounded-lg'>
 						<figure className='py-5'>
 							<img
@@ -213,6 +233,8 @@ const SingleDestination = () => {
 							</div>
 						</div>
 					</div>
+
+					{/* section: All Categories */ }
 					<div className='my-5'>
 						<h4 className='text-2xl font-medium my-4'>All Categories</h4>
 						<ul className='flex flex-col gap-5'>
@@ -245,6 +267,8 @@ const SingleDestination = () => {
 							</li>
 						</ul>
 					</div>
+
+					{/* section: Tags */ }
 					<div className='my-5'>
 						<h4 className='text-2xl font-medium my-4'>Tags</h4>
 						<ul className='text-sm font-medium'>
@@ -292,6 +316,7 @@ const SingleDestination = () => {
 							</span>
 						</ul>
 					</div>
+					{/* section: Featured Image: this will be another post */ }
 					<div className='w-full rounded-lg overflow-hidden'>
 						<img src={ imgDetails } alt='' />
 					</div>
