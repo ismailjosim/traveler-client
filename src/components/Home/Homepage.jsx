@@ -7,6 +7,7 @@ import Packages from './HomeSections/Packages'
 import Partners from './HomeSections/Partners'
 import TopDeals from './HomeSections/TopDeals'
 import HolidayForm from './HomeSections/HolidayForm';
+import CTA from './HomeSections/CTA'
 
 const Homepage = () => {
 	return (
@@ -18,6 +19,7 @@ const Homepage = () => {
 			<Packages />
 			<Activity />
 			<TopDeals />
+			<CTA />
 			<Partners />
 		</div>
 	)
