@@ -1,6 +1,6 @@
 import React from 'react'
 import Activity from './HomeSections/Activity'
-import Destination from './HomeSections/Destination'
+import Gallery from './HomeSections/Gallery'
 import Featured from './HomeSections/Featured'
 import Hero from './HomeSections/Hero'
 import Packages from './HomeSections/Packages'
@@ -16,8 +16,8 @@ const Homepage = () => {
 			<Hero />
 			<HolidayForm />
 			<Featured />
-			<Destination />
 			<Packages />
+			<Gallery />
 			<Activity />
 			<TopDeals />
 			<Reviews />

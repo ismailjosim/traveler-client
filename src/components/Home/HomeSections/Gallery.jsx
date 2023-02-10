@@ -1,12 +1,8 @@
 import React from 'react'
-import SectionHeading from './../../../utilities/SectionHeading'
+import SectionHeading from '../../../utilities/SectionHeading'
 
-import img01 from '../../../assets/destinations/destination1.jpg'
-import img02 from '../../../assets/destinations/destination2.jpg'
-import img03 from '../../../assets/destinations/destination15.jpg'
-import img04 from '../../../assets/destinations/destination16.jpg'
 
-const Destination = () => {
+const Gallery = () => {
 	const heading = {
 		subHeading: 'Photo Gallery',
 		headingOne: "Photo's From",
@@ -55,4 +51,4 @@ const Destination = () => {
 	)
 }
 
-export default Destination
+export default Gallery
