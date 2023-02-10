@@ -5,7 +5,7 @@ import '../../../styles/Custom.css'
 
 const HolidayForm = () => {
     return (
-        <div className="relative block z-[2]">
+        <div className="relative">
             <div className="section-shape top-0" />
             <div className="w-11/12 mx-auto bg-slate-50 shadow-lg rounded-lg">
                 <div className="flex justify-between overflow-hidden items-center">
