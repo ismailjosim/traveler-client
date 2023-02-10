@@ -60,7 +60,10 @@ const HolidayForm = () => {
                         />
                     </div>
                     <div className='flex flex-col px-2 lg:px-0 lg:mb-0 mb-5'>
-                        <button className='btn btn-primary text-white hover:bg-secondary transition-all duration-300'>Search Now</button>
+                        <button className='btn btn-primary text-white hover:bg-secondary transition-all duration-300 flex gap-1'>
+                            <FaSearch />
+                            <span>Search Now</span>
+                        </button>
                     </div>
                 </div>
             </div>
