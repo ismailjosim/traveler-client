@@ -16,7 +16,7 @@ const CTA = () => {
                     </p>
                 </div>
                 <div className='flex lg:justify-end mt-10 lg:mt-0 md:mt-5 items-center'>
-                    <Link to={ '/contact' } className="btn btn-secondary px-5 py-1 text-base relative z-10 text-white btn-custom font-semibold">
+                    <Link to={ '/contact' } className="btn bg-white text-primary px-5 py-1 text-base relative z-10 btn-custom font-semibold">
                         Contact US
                     </Link>
                 </div>
