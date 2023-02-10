@@ -60,17 +60,17 @@ const Testimonials = () => {
 
 	return (
 		<div className='testimonial'>
-			<SectionHeading heading={heading} />
+			<SectionHeading heading={ heading } />
 			<div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 items-center mb-20 w-11/12 mx-auto'>
 				<div>
-					<img src={testBg} alt='' />
+					<img src={ testBg } alt='' />
 				</div>
 				<div className='w-11/12 mx-auto'>
-					<Slider {...settings}>
-						{contents.map((content, idx) => {
+					<Slider { ...settings }>
+						{ contents.map((content, idx) => {
 							const { name, post, details } = content
 							return (
-								<div key={idx} className=''>
+								<div key={ idx } className=''>
 									<div className='flex items-center gap-5'>
 										<div className='avatar'>
 											<div className='w-20 rounded-full'>
@@ -79,18 +79,18 @@ const Testimonials = () => {
 										</div>
 										<div>
 											<h3 className='text-2xl font-semibold uppercase text-primary'>
-												{name}
+												{ name }
 											</h3>
-											<p>{post}</p>
+											<p>{ post }</p>
 										</div>
 									</div>
 									<div className='text-lg mt-5'>
 										<FaQuoteLeft className='text-6xl text-primary inline' />
-										<span className='italic text-neutral'> {details}</span>
+										<span className='italic text-neutral'> { details }</span>
 									</div>
 								</div>
 							)
-						})}
+						}) }
 					</Slider>
 				</div>
 			</div>
