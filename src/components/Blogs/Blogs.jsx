@@ -16,11 +16,11 @@ const Blogs = () => {
 
 	return (
 		<div>
-			<PageHeading headTitle={'latest blogs'}></PageHeading>
+			<PageHeading headTitle={ 'latest blogs' }></PageHeading>
 			<div className='w-11/12 mx-auto grid grid-cols-3 gap-5'>
 				<div className='col-span-2'>
 					<div className='flex justify-between items-center mb-5'>
-						<h3>Show 1-5 of {blogs.length} results</h3>
+						<h3>Show 1-5 of { blogs.length } results</h3>
 						<div className='flex gap-2'>
 							<div className='active:bg-secondary bg-neutral p-2 rounded-md text-white hover:bg-secondary transition-all duration-500'>
 								<FaBars />
@@ -37,12 +37,12 @@ const Blogs = () => {
 						</select>
 					</div>
 					<div>
-						{blogs.map((blog, idx) => {
+						{ blogs.map((blog, idx) => {
 							const { title, category, details, date, creator, thumbnail } =
 								blog
 							return (
 								<article
-									key={idx}
+									key={ idx }
 									className='flex bg-white transition shadow-xl hover:shadow-md border rounded-md mb-5'
 								>
 									<div className='rotate-180 p-2 [writing-mode:_vertical-lr]'>
@@ -50,15 +50,15 @@ const Blogs = () => {
 											dateTime='2022-10-10'
 											className='flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900'
 										>
-											<span>{category}</span>
+											<span>{ category }</span>
 											<span className='w-px flex-1 bg-gray-900/10'></span>
-											<span>{date}</span>
+											<span>{ date }</span>
 										</time>
 									</div>
 									<div className='hidden sm:block sm:basis-56'>
 										<img
 											alt='Guitar'
-											src={thumbnail}
+											src={ thumbnail }
 											className='aspect-square h-full w-full object-cover'
 										/>
 									</div>
@@ -66,17 +66,17 @@ const Blogs = () => {
 										<div className='border-l border-gray-900/10 p-4 sm:border-l-transparent sm:p-6'>
 											<a href='/'>
 												<h3 className='font-bold uppercase text-gray-900'>
-													{title}
+													{ title }
 												</h3>
 											</a>
 											<div>
 												<p className='flex items-center gap-2'>
 													<BsFillPersonFill className='bg-primary text-white p-1 rounded-full text-xl' />
-													<span>{creator}</span>
+													<span>{ creator }</span>
 												</p>
 											</div>
 											<p className='mt-2 text-sm leading-relaxed text-gray-700 line-clamp-3'>
-												{details}{' '}
+												{ details }{ ' ' }
 											</p>
 										</div>
 										<div className='sm:flex sm:items-end sm:justify-end'>
@@ -90,7 +90,7 @@ const Blogs = () => {
 									</div>
 								</article>
 							)
-						})}
+						}) }
 					</div>
 				</div>
 				<div className='col-span-1'>
