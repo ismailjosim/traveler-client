@@ -149,3 +149,9 @@
     background-repeat: repeat-x;
     z-index: -1;
 }
+
+/* cart page design */
+.table :where(thead, tfoot) :where(th, td) {
+    background-color: transparent !important;
+
+}

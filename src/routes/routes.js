@@ -10,6 +10,7 @@ import ErrorPage from '../components/ErrorPage/ErrorPage'
 import FAQs from '../components/FAQs/FAQs'
 import Homepage from '../components/Home/Homepage'
 import Main from '../layouts/Main'
+import Cart from './../components/Cart/Cart';
 
 const routes = createBrowserRouter([
 	{
@@ -48,6 +49,10 @@ const routes = createBrowserRouter([
 			{
 				path: '/faq',
 				element: <FAQs />,
+			},
+			{
+				path: '/cart',
+				element: <Cart />,
 			},
 			{
 				path: `/destination/:id`,

@@ -59,6 +59,14 @@ const Header = () => {
 			<li>
 				<NavLink
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
+					to='/cart'
+				>
+					Cart
+				</NavLink>
+			</li>
+			<li>
+				<NavLink
+					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/login'
 				>
 					login/register
@@ -72,7 +80,7 @@ const Header = () => {
 			<div className='navbar font-semibold p-0 w-11/12 mx-auto'>
 				<div className='navbar-start'>
 					<Link
-						onClick={() => setIsActive('/')}
+						onClick={ () => setIsActive('/') }
 						className='text-2xl font-extrabold uppercase'
 						to='/'
 					>
@@ -81,10 +89,10 @@ const Header = () => {
 				</div>
 				<div className='navbar-end'>
 					<div className='navbar-center hidden lg:flex'>
-						<ul className='menu menu-horizontal p-0 gap-3'>{menuItems}</ul>
+						<ul className='menu menu-horizontal p-0 gap-3'>{ menuItems }</ul>
 					</div>
 					<div className='dropdown dropdown-bottom dropdown-end'>
-						<label tabIndex={0} className='btn btn-ghost lg:hidden'>
+						<label tabIndex={ 0 } className='btn btn-ghost lg:hidden'>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								fill='none'
@@ -101,7 +109,7 @@ const Header = () => {
 							</svg>
 						</label>
 						<ul className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'>
-							{menuItems}
+							{ menuItems }
 						</ul>
 					</div>
 				</div>
