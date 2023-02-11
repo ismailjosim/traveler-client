@@ -1,21 +1,26 @@
-import React from 'react';
 import PageHeading from '../../../utilities/PageHeading';
 import { AiFillClockCircle, AiFillHeart } from 'react-icons/ai';
 import { IoMdPeople } from 'react-icons/io';
-import { FaMapMarkerAlt } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaSearch } from 'react-icons/fa';
 import img01 from '../../../assets/brand/img27.jpg'
 import { BiCheck } from 'react-icons/bi';
 import { RxCross2 } from 'react-icons/rx';
 import { BsFillRecordCircleFill } from 'react-icons/bs';
+import { useState } from 'react';
+import DatePicker from "react-datepicker";
+
+
+
 const PackageDetails = () => {
     const arr = [1, 2, 3, 4, 5]
-
+    const [startDate, setStartDate] = useState(new Date());
+    const [endDate, setEndDate] = useState(new Date())
 
 
     return (
         <section>
             <PageHeading headTitle={ 'Package Details' } />
-            <div className='w-11/12 mx-auto grid grid-cols-3 gap-5'>
+            <div className='w-11/12 mx-auto grid grid-cols-3 gap-10'>
                 {/* Left-side content */ }
                 <div className='col-span-2'>
                     {/* Header: Package Details */ }
@@ -105,12 +110,15 @@ const PackageDetails = () => {
                     </div>
                     {/* section: ITINERARY */ }
                     <div>
-                        <h3 className='text-2xl font-semibold mb-5'>ITINERARY :</h3>
+                        <h3 className='text-2xl font-semibold'>ITINERARY :</h3>
+                        <p className='my-5'>
+                            Malesuada incidunt excepturi proident quo eros? Id interdum praesent magnis, eius cumque? Integer aptent officiis recusandae habitasse iure, quisque culpa!
+                        </p>
                         <ul className='flex flex-col gap-2 mb-20'>
                             {
                                 arr.map((item, idx) => {
                                     return (
-                                        <li key={ idx } className='flex items-center gap-1'>
+                                        <li key={ idx } className='flex items-center gap-2'>
                                             <BsFillRecordCircleFill className='text-primary' />
                                             <span className='text-base'>DAY 1 Departure at the airport and arrival at the hotel</span>
                                         </li>
@@ -123,12 +131,68 @@ const PackageDetails = () => {
 
                 </div>
                 {/* Section: Right-side content */ }
-                <div>
+                <div className='col-span-1'>
 
+                    <div className="bg-primary rounded-lg text-white px-5 py-10">
+                        <div className="mx-auto max-w-lg text-center">
+                            <h4 className="text-2xl font-bold sm:text-2xl">BOOKING FORM</h4>
+                            <p className='py-2'>
+                                Malesuada incidunt excepturi proident quo eros? Sinterdum praesent magnis, eius cumque.
+                            </p>
+                        </div>
+                        <form className="mx-auto mt-8 mb-0 max-w-md space-y-4">
+                            <div>
+                                <div className="relative">
+                                    <input
+                                        type="text"
+                                        name='name'
+                                        className="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm"
+                                        placeholder="Your Name"
+                                    />
+                                </div>
+                            </div>
 
+                            <div>
+                                <div className="relative">
+                                    <input
+                                        type="email"
+                                        name='email'
+                                        className="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm"
+                                        placeholder="Your Email"
+                                    />
+                                </div>
+                            </div>
+                            <div className='flex gap-5'>
+                                <div className='px-2 lg:px-0'>
+                                    <h3>Checkin Date</h3>
+                                    <DatePicker
+                                        className="select w-full border border-primary text-black"
+                                        selected={ startDate }
+                                        onChange={ (date) => setStartDate(date) }
+                                        dateFormat="PP"
+                                    />
+                                </div>
+                                <div className='px-2 lg:px-0'>
+                                    <h3>Checkout Date</h3>
+                                    <DatePicker
+                                        className="select w-full border border-primary text-black"
+                                        placeholderText='Start Date'
+                                        selected={ endDate }
+                                        onChange={ (date) => setEndDate(date) }
+                                        dateFormat="PP"
+                                    />
+                                </div>
+                            </div>
+                            <div className='flex flex-col px-2 lg:px-0 lg:mb-0 mb-5'>
+                                <button className='btn btn-outline text-white hover:bg-secondary transition-all duration-300 flex gap-1'>
+                                    <FaSearch />
+                                    <span>Search Now</span>
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
                 </div>
-
-
             </div>
         </section>
     );

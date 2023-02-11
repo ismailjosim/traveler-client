@@ -10,10 +10,6 @@ const HolidayForm = () => {
     const [endDate, setEndDate] = useState(new Date())
 
 
-
-
-
-
     return (
         <div className='relative z-0'>
             <div className="section-shape lg:mt-12 md:mt-12 mt-20" />
