@@ -9,6 +9,7 @@ import SingleDestination from '../components/Destinations/Sections/SingleDestina
 import ErrorPage from '../components/ErrorPage/ErrorPage'
 import FAQs from '../components/FAQs/FAQs'
 import Homepage from '../components/Home/Homepage'
+import TourPackages from '../components/TourPackages/TourPackages'
 import Main from '../layouts/Main'
 import Cart from './../components/Cart/Cart';
 
@@ -49,6 +50,10 @@ const routes = createBrowserRouter([
 			{
 				path: '/faq',
 				element: <FAQs />,
+			},
+			{
+				path: '/packages',
+				element: <TourPackages />,
 			},
 			{
 				path: '/cart',

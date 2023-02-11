@@ -25,8 +25,6 @@ const OfferCard = () => {
                                 <FaMapMarkerAlt />
                                 <span>pax: 10</span>
                             </p>
-
-
                         </div>
                         <h3 className='text-xl font-bold text-accent'>TOUR TO SATORI</h3>
                         <p className='text-sm my-2'>Fusce hic augue velit wisi ips quibus dam pariatur, iusto.</p>
