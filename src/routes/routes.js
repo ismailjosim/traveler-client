@@ -12,6 +12,7 @@ import Homepage from '../components/Home/Homepage'
 import TourPackages from '../components/TourPackages/TourPackages'
 import Main from '../layouts/Main'
 import Cart from './../components/Cart/Cart';
+import PackageDetails from './../components/TourPackages/TourSections/PackageDetails';
 
 const routes = createBrowserRouter([
 	{
@@ -54,6 +55,10 @@ const routes = createBrowserRouter([
 			{
 				path: '/packages',
 				element: <TourPackages />,
+			},
+			{
+				path: '/package/:id',
+				element: <PackageDetails />,
 			},
 			{
 				path: '/cart',

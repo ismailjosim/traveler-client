@@ -9,10 +9,12 @@ const TourCard = ({ item }) => {
     return (
         <div className='grid grid-cols-3 mb-10 shadow-xl overflow-hidden rounded-lg'>
             <div>
-                <img src={ thumbnail } alt="" className='h-72 w-full object-cover' />
+                <Link to={ `/package/:id` }>
+                    <img src={ thumbnail } alt="" className='h-72 w-full object-cover' />
+                </Link>
             </div>
             <div className='bg-slate-200 pt-10 px-5'>
-                <Link className='text-3xl font-bold' to={ '/' }>{ title }</Link>
+                <Link className='text-3xl font-bold' to={ `/package/:id` }>{ title }</Link>
                 <p className='text-base my-2'>{ details }</p>
                 <div className='bg-white shadow-md rounded-full py-2 px-5 inline-block mt-5'>
                     <div className='flex gap-2 text-sm font-medium text-primary items-center'>
