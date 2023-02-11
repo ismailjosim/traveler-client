@@ -2,9 +2,9 @@ import React from 'react';
 import PageHeading from '../../utilities/PageHeading';
 import singleImg from '../../assets/destinations/destination1.jpg'
 import { Link } from 'react-router-dom';
-import { AiFillClockCircle, AiFillStar } from 'react-icons/ai'
+import { AiFillClockCircle, AiFillHeart } from 'react-icons/ai'
 import { IoMdPeople } from 'react-icons/io'
-import { FaMapMarkerAlt, FaStarHalf } from 'react-icons/fa'
+import { FaMapMarkerAlt } from 'react-icons/fa'
 
 
 
@@ -39,21 +39,21 @@ const TourPackages = () => {
                             <span>|</span>
                             <p className='flex items-center gap-1'>
                                 <FaMapMarkerAlt />
-                                <span>pax: 10</span>
+                                <span>Japan</span>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div className='bg-primary flex justify-center items-center text-white'>
                     <div className='text-center'>
-                        <div className='flex items-center'>
+                        <div className='flex items-center gap-5'>
                             <span>(25 reviews)</span>
-                            <p className='flex items-center gap-1 text-lg text-secondary'>
-                                <AiFillStar />
-                                <AiFillStar />
-                                <AiFillStar />
-                                <AiFillStar />
-                                <FaStarHalf />
+                            <p className='flex items-center gap-1 text-lg text-white'>
+                                <AiFillHeart />
+                                <AiFillHeart />
+                                <AiFillHeart />
+                                <AiFillHeart />
+                                <AiFillHeart />
                             </p>
                         </div>
                         <div className='py-5'>
