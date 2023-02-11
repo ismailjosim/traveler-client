@@ -16,7 +16,6 @@ const Homepage = () => {
 		<div>
 			<Hero />
 			<HolidayForm />
-
 			<Featured />
 			<Offers />
 			<Packages />

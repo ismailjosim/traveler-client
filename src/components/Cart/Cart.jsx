@@ -5,13 +5,7 @@ import '../../styles/Custom.css'
 import { BiMinus, BiPlus } from 'react-icons/bi'
 
 const Cart = () => {
-
-
-
-
-
     const arr = [1, 2, 3, 4, 5]
-
 
     return (
         <section>
