@@ -2,20 +2,33 @@ import PageHeading from '../../../utilities/PageHeading';
 import { AiFillClockCircle, AiFillHeart } from 'react-icons/ai';
 import { IoMdPeople } from 'react-icons/io';
 import { FaMapMarkerAlt, FaSearch } from 'react-icons/fa';
-import img01 from '../../../assets/brand/img27.jpg'
+import img01 from '../../../assets/brand/img27.jpg';
 import { BiCheck } from 'react-icons/bi';
 import { RxCross2 } from 'react-icons/rx';
-import { BsFillRecordCircleFill } from 'react-icons/bs';
+import { BsArrowRightCircle, BsFillRecordCircleFill } from 'react-icons/bs';
 import { useState } from 'react';
 import DatePicker from "react-datepicker";
+import Slider from 'react-slick';
+import '../../../styles/Custom.css'
+import { Link } from 'react-router-dom';
 
 
 
 const PackageDetails = () => {
-    const arr = [1, 2, 3, 4, 5]
+    const arr = [1, 2, 3, 4, 5];
     const [startDate, setStartDate] = useState(new Date());
-    const [endDate, setEndDate] = useState(new Date())
+    const [endDate, setEndDate] = useState(new Date());
 
+    const settings = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        button: false,
+    }
 
     return (
         <section>
@@ -132,7 +145,7 @@ const PackageDetails = () => {
                 </div>
                 {/* Section: Right-side content */ }
                 <div className='col-span-1'>
-
+                    {/* Section: Booking Form */ }
                     <div className="bg-primary rounded-lg text-white px-5 py-10">
                         <div className="mx-auto max-w-lg text-center">
                             <h4 className="text-2xl font-bold sm:text-2xl">BOOKING FORM</h4>
@@ -183,7 +196,7 @@ const PackageDetails = () => {
                                     />
                                 </div>
                             </div>
-                            <div className='flex flex-col px-2 lg:px-0 lg:mb-0 mb-5'>
+                            <div className='flex flex-col px-2 lg:px-0 lg:mb-0 my-10'>
                                 <button className='btn btn-outline text-white hover:bg-secondary transition-all duration-300 flex gap-1'>
                                     <FaSearch />
                                     <span>Search Now</span>
@@ -191,6 +204,55 @@ const PackageDetails = () => {
                             </div>
 
                         </form>
+                    </div>
+                    {/* Section: Related Images */ }
+                    <div className='my-10'>
+                        <h4 className='text-2xl text-center font-semibold'>RELATED IMAGES</h4>
+                        <p className='text-center my-2'>Quaerat inventore! Vestibulum aenean volutpat gravida. Sagittis, euismod perferendis.</p>
+                        <div className=''>
+                            <Slider { ...settings }>
+                                {
+                                    arr.map((item, idx) => {
+                                        return (
+                                            <img className='rounded-lg w-full block' key={ idx } src={ img01 } alt="" />
+                                        )
+                                    })
+                                }
+                            </Slider>
+                        </div>
+                    </div>
+                    {/* Section: Google Map */ }
+                    <div className='my-14'>
+                        <iframe
+                            className='w-full max-h-80 rounded-lg'
+                            title='myFrame'
+                            height={ 500 }
+                            src='https://maps.google.com/maps?q=Bhola,%20barishal,%20bangladesh&t=&z=11&ie=UTF8&iwloc=&output=embed'
+                            frameBorder='0'
+                        ></iframe>
+                    </div>
+                    {/* Section: More Packages */ }
+                    <div
+                        style={ { backgroundImage: `url(${ img01 })` } }
+                        className="relative overflow-hidden rounded-xl bg-cover bg-center bg-no-repeat">
+                        <div className="relative bg-black bg-opacity-40 px-5 py-10">
+                            <h2 className="text-base py-1 text-center rounded-full bg-white">MORE PACKAGES</h2>
+                            <ul className='mt-10 text-white flex flex-col gap-2'>
+                                {
+                                    arr.map((item, idx) => {
+                                        return (
+                                            <li className=' border-b border-white/30 pb-2'>
+                                                <Link to={ '/packages' } className="flex items-center gap-2 text-lg">
+                                                    <BsArrowRightCircle />
+                                                    <span>Vacation Packages</span>
+                                                </Link>
+                                            </li>
+                                        )
+                                    })
+                                }
+
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
