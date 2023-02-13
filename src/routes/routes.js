@@ -58,6 +58,7 @@ const routes = createBrowserRouter([
 			},
 			{
 				path: '/package/:id',
+				loader: ({ params }) => fetch(`https://travel-server-woad.vercel.app/package/${ params.id }`),
 				element: <PackageDetails />,
 			},
 			{

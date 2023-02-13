@@ -11,7 +11,6 @@ import PageHeading from '../../../utilities/PageHeading'
 
 const SingleDestination = () => {
 	const { destination } = useLoaderData();
-	console.log(destination);
 	const { name, location, rating, picture, details, packageIncludes, returnPolicy, gallery } = destination;
 
 
