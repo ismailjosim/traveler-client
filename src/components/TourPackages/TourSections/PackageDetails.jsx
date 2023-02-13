@@ -250,7 +250,6 @@ const PackageDetails = () => {
                                         )
                                     })
                                 }
-
                             </ul>
                         </div>
                     </div>
