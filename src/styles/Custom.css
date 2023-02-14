@@ -48,6 +48,13 @@
 
 }
 
+.why-us-item:hover .why-us-content .card_review {
+    color: #fff !important;
+    transition-delay: .5s;
+    transition: all ease-in-out 0.9s;
+
+}
+
 .why-us-item:hover::before {
     color: #fff !important;
     height: 100%;

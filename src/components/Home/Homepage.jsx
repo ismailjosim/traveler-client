@@ -9,7 +9,7 @@ import TopDeals from './HomeSections/TopDeals'
 import HolidayForm from './HomeSections/HolidayForm';
 import CTA from './HomeSections/CTA'
 import Reviews from './HomeSections/Reviews'
-import Offers from '../Offers/Offers'
+import TopDestinations from './HomeSections/TopDestinations'
 
 const Homepage = () => {
 	return (
@@ -17,7 +17,7 @@ const Homepage = () => {
 			<Hero />
 			<HolidayForm />
 			<Featured />
-			<Offers />
+			<TopDestinations />
 			<Packages />
 			<Gallery />
 			<Activity />
