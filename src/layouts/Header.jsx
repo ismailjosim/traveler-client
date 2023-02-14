@@ -27,7 +27,7 @@ const Header = () => {
 			<li>
 				<NavLink
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
-					to='/destination'
+					to='/destinations'
 				>
 					Destination
 				</NavLink>

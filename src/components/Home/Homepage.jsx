@@ -3,7 +3,7 @@ import Activity from './HomeSections/Activity'
 import Gallery from './HomeSections/Gallery'
 import Featured from './HomeSections/Featured'
 import Hero from './HomeSections/Hero'
-import Packages from './HomeSections/Packages'
+import TopPackages from './HomeSections/TopPackages'
 import Partners from './HomeSections/Partners'
 import TopDeals from './HomeSections/TopDeals'
 import HolidayForm from './HomeSections/HolidayForm';
@@ -18,7 +18,7 @@ const Homepage = () => {
 			<HolidayForm />
 			<Featured />
 			<TopDestinations />
-			<Packages />
+			<TopPackages />
 			<Gallery />
 			<Activity />
 			<TopDeals />

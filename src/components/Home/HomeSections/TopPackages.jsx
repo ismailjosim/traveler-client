@@ -2,8 +2,9 @@ import { useQuery } from '@tanstack/react-query';
 import React from 'react'
 import '../../../styles/Custom.css'
 import TourCard from '../../TourPackages/TourSections/TourCard';
-import SectionHeading from './../../../utilities/SectionHeading';
-const Packages = () => {
+import SectionHeading from '../../../utilities/SectionHeading';
+import Button from './../../../utilities/Button';
+const TopPackages = () => {
 
 
 	const heading = {
@@ -30,8 +31,11 @@ const Packages = () => {
 					packages.slice(0, 3).map((item, idx) => <TourCard key={ idx } item={ item } />)
 				}
 			</div>
+			<div className='text-center'>
+				<Button btnText={ 'Explore more' } destination={ '/destinations' }></Button>
+			</div>
 		</section>
 	)
 }
 
-export default Packages
+export default TopPackages

@@ -38,7 +38,7 @@ const routes = createBrowserRouter([
 				element: <About />,
 			},
 			{
-				path: '/destination',
+				path: '/destinations',
 				element: <Destinations />,
 			},
 			{
