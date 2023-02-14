@@ -13,11 +13,11 @@ const SubmitQuestion = () => {
 
 	return (
 		<div>
-			<SectionHeading heading={heading} />
+			<SectionHeading heading={ heading } />
 			<section className='w-11/12 mx-auto mb-10'>
 				<div className='flex flex-col lg:flex-row'>
 					<section className='rounded-lg lg:w-1/2 w-full'>
-						<img alt='Night' src={logo} className='rounded-lg' />
+						<img alt='Night' src={ logo } className='rounded-lg' />
 					</section>
 					<section className='lg:w-1/2 w-full'>
 						<main className='lg:pl-10'>
@@ -52,7 +52,7 @@ const SubmitQuestion = () => {
 											<label className='label'>Destination</label>
 											<select
 												className='select select-primary w-full text-base'
-												defaultValue={'Select Location'}
+												defaultValue={ 'Select Location' }
 											>
 												<option disabled>Select Location</option>
 												<option value='Afghanistan'>Afghanistan</option>
