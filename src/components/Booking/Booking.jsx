@@ -6,17 +6,51 @@ const Booking = () => {
     return (
         <section>
             <PageHeading headTitle={ "booking" } />
-            <div className='w-11/12 mx-auto grid grid-cols-3 gap-10 my-10'>
+            <div className='w-11/12 mx-auto grid lg:grid-cols-3 gap-10 my-10'>
                 {/* Section : Left side Content */ }
-                <div className='col-span-2'>
+                <div className='lg:col-span-2'>
+                    {/* TODO: Details Section => Only visible in table and mobile  */ }
+                    <div className='bg-slate-50 px-5 py-10 shadow-md rounded-md mb-10 lg:hidden'>
+                        <h4 className='bg-primary text-white text-center py-2 rounded-lg uppercase text-lg font-semibold mb-5'>Details</h4>
+                        <div>
+                            <p className='flex justify-between items-center border-b pb-2'>
+                                <span className='font-semibold'>Packages cost</span>
+                                <span>$500</span>
+                            </p>
+                            <p className='flex justify-between items-center border-b py-2'>
+                                <span className='font-semibold'>Packages Name</span>
+                                <span>Machu Picchu, peru</span>
+                            </p>
+                            <p className='flex justify-between items-center border-b py-2'>
+                                <span className='font-semibold'>Packages cost</span>
+                                <span>$500</span>
+                            </p>
+                            <p className='flex justify-between items-center border-b py-2'>
+                                <span className='font-semibold'>Dedicated tour guide</span>
+                                <span>$60</span>
+                            </p>
+                            <p className='flex justify-between items-center border-b py-2'>
+                                <span className='font-semibold'>Insurance</span>
+                                <span>$40</span>
+                            </p>
+                            <p className='flex justify-between items-center border-b py-2'>
+                                <span className='font-semibold'>Tax</span>
+                                <span>15%</span>
+                            </p>
+                            <p className='flex justify-between items-center pt-5'>
+                                <span className='font-semibold'>Total cost</span>
+                                <span className='text-primary font-bold'>$580</span>
+                            </p>
 
+                        </div>
+                    </div>
                     {/* Section : Step 01 */ }
                     <div className='bg-slate-50 px-5 py-10 rounded-lg shadow-md'>
                         <h3 className='text-3xl flex gap-5 items-center font-semibold'>
                             <span className='bg-primary w-14 h-14 text-center rounded-full text-white flex justify-center items-center'>1</span>
                             <span>YOUR DETAILS</span>
                         </h3>
-                        <form action="" className='grid grid-cols-2 gap-5'>
+                        <form action="" className='grid lg:grid-cols-2 gap-5'>
                             <div>
                                 <label className='label'>First Name*</label>
                                 <input
@@ -434,7 +468,7 @@ const Booking = () => {
                             <span className='bg-primary w-14 h-14 text-center rounded-full text-white flex justify-center items-center'>2</span>
                             <span>PAYMENT INFORMATION</span>
                         </h3>
-                        <form action="" className='grid grid-cols-2 gap-5'>
+                        <form action="" className='grid lg:grid-cols-2 gap-5'>
                             <div>
                                 <label className='label'>Name on card*</label>
                                 <input
@@ -484,8 +518,8 @@ const Booking = () => {
                     </div>
                 </div>
 
-                <div className='col-span-1'>
-                    <div className='bg-slate-50 px-5 py-10 shadow-md rounded-md'>
+                <div className='lg:col-span-1'>
+                    <div className='bg-slate-50 px-5 py-10 shadow-md rounded-md  lg:block hidden'>
                         <h4 className='bg-primary text-white text-center py-2 rounded-lg uppercase text-lg font-semibold mb-5'>Details</h4>
                         <div>
                             <p className='flex justify-between items-center border-b pb-2'>
