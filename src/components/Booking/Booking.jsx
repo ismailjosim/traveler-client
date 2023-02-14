@@ -1,5 +1,6 @@
 import React from 'react';
 import PageHeading from '../../utilities/PageHeading';
+import { FaPhoneVolume } from 'react-icons/fa'
 
 const Booking = () => {
     return (
@@ -10,7 +11,7 @@ const Booking = () => {
                 <div className='col-span-2'>
 
                     {/* Section : Step 01 */ }
-                    <div className='bg-slate-50 px-5 py-5 rounded-lg shadow-md'>
+                    <div className='bg-slate-50 px-5 py-10 rounded-lg shadow-md'>
                         <h3 className='text-3xl flex gap-5 items-center font-semibold'>
                             <span className='bg-primary w-14 h-14 text-center rounded-full text-white flex justify-center items-center'>1</span>
                             <span>YOUR DETAILS</span>
@@ -427,18 +428,103 @@ const Booking = () => {
                             </div>
                         </form>
                     </div>
-
-
                     {/* Section : Step 02 */ }
-                    <div>
+                    <div className='bg-slate-50 mt-14 px-5 rounded-lg shadow-md py-10'>
+                        <h3 className='text-3xl flex gap-5 items-center font-semibold'>
+                            <span className='bg-primary w-14 h-14 text-center rounded-full text-white flex justify-center items-center'>2</span>
+                            <span>PAYMENT INFORMATION</span>
+                        </h3>
+                        <form action="" className='grid grid-cols-2 gap-5'>
+                            <div>
+                                <label className='label'>Name on card*</label>
+                                <input
+                                    type='text'
+                                    placeholder='Card Holder Number'
+                                    className='input input-bordered input-success w-full'
+                                />
+                            </div>
+                            <div>
+                                <label className='label'>Card number*</label>
+                                <input
+                                    type='text'
+                                    placeholder='****************'
+                                    className='input input-bordered input-success w-full'
+                                />
+                            </div>
 
+                            <div>
+                                <label className='label'>Expiry Date</label>
+                                <input
+                                    type='text'
+                                    placeholder='Expiry Date'
+                                    className='input input-bordered input-success w-full'
+                                />
+                            </div>
+                            <div>
+                                <label className='label'>CVC/CVV</label>
+                                <input
+                                    type='text'
+                                    placeholder='CVC/CVV'
+                                    className='input input-bordered input-success w-full'
+                                />
+                            </div>
+                            <div>
+                                <div className='flex gap-2 items-center'>
+                                    <input
+                                        type='checkbox'
+                                        className='checkbox checkbox-primary'
+                                    />
+                                    <span>I agree to the Terms and Conditions.</span>
+                                </div>
+                                <div className='mt-5'>
+                                    <button className='btn btn-primary text-white'>Submit Now</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
 
+                <div className='col-span-1'>
+                    <div className='bg-slate-50 px-5 py-10 shadow-md rounded-md'>
+                        <h4 className='bg-primary text-white text-center py-2 rounded-lg uppercase text-lg font-semibold mb-5'>Details</h4>
+                        <div>
+                            <p className='flex justify-between items-center border-b pb-2'>
+                                <span className='font-semibold'>Packages cost</span>
+                                <span>$500</span>
+                            </p>
+                            <p className='flex justify-between items-center border-b py-2'>
+                                <span className='font-semibold'>Packages Name</span>
+                                <span>Machu Picchu, peru</span>
+                            </p>
+                            <p className='flex justify-between items-center border-b py-2'>
+                                <span className='font-semibold'>Packages cost</span>
+                                <span>$500</span>
+                            </p>
+                            <p className='flex justify-between items-center border-b py-2'>
+                                <span className='font-semibold'>Dedicated tour guide</span>
+                                <span>$60</span>
+                            </p>
+                            <p className='flex justify-between items-center border-b py-2'>
+                                <span className='font-semibold'>Insurance</span>
+                                <span>$40</span>
+                            </p>
+                            <p className='flex justify-between items-center border-b py-2'>
+                                <span className='font-semibold'>Tax</span>
+                                <span>15%</span>
+                            </p>
+                            <p className='flex justify-between items-center pt-5'>
+                                <span className='font-semibold'>Total cost</span>
+                                <span className='text-primary font-bold'>$580</span>
+                            </p>
 
-
-                <div className='col-span-1 bg-secondary'>
-                    Hello
+                        </div>
+                    </div>
+                    <div className='bg-slate-50 px-5 py-10 shadow-md rounded-md mt-10 flex flex-col justify-center items-center'>
+                        <FaPhoneVolume className='text-4xl' />
+                        <p className='font-thin my-2'>HELP AND SUPPORT</p>
+                        <h3 className='text-3xl mb-2 font-bold'>+12 345 678 90</h3>
+                        <p className='font-thin text-xs'>Monday to Friday 9.00am - 7.30pm</p>
+                    </div>
                 </div>
 
 
