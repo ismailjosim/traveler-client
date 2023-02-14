@@ -3,6 +3,7 @@ import About from '../components/About/About'
 import UserLogin from '../components/Auth/UserLogin'
 import UserRegister from '../components/Auth/UserRegister'
 import Blogs from '../components/Blogs/Blogs'
+import Booking from '../components/Booking/Booking'
 import Contact from '../components/Contact Us/Contact'
 import Destinations from '../components/Destinations/Destinations'
 import SingleDestination from '../components/Destinations/Sections/SingleDestination'
@@ -70,6 +71,10 @@ const routes = createBrowserRouter([
 				loader: ({ params }) => fetch(`https://travel-server-ismailjosim.vercel.app/destination/${ params.id }`),
 				element: <SingleDestination />
 			},
+			{
+				path: '/booking',
+				element: <Booking />
+			}
 		],
 	},
 ])

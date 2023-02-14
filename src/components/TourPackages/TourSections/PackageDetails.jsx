@@ -12,7 +12,6 @@ import '../../../styles/Custom.css'
 import { Link, useLoaderData } from 'react-router-dom';
 
 
-
 const PackageDetails = () => {
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
