@@ -49,12 +49,12 @@ const Featured = () => {
 	}
 
 	return (
-		<div className='w-10/12 mx-auto my-10'>
-			<SectionHeading heading={heading} />
+		<div className='w-11/12 mx-auto my-10'>
+			<SectionHeading heading={ heading } />
 			<div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-5'>
-				{featureData.map((data) => (
-					<Card key={data.id} data={data}></Card>
-				))}
+				{ featureData.map((data) => (
+					<Card key={ data.id } data={ data }></Card>
+				)) }
 			</div>
 		</div>
 	)
