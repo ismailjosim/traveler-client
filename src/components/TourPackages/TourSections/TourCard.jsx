@@ -6,17 +6,18 @@ import { Link } from 'react-router-dom';
 
 const TourCard = ({ item }) => {
     const { title, price, details, stayingDay, stayingNight, peoples, location, thumbnail, reviews, packageId } = item;
+
     return (
-        <div className='grid grid-cols-3 mb-10 shadow-xl overflow-hidden rounded-lg'>
+        <div className='grid lg:grid-cols-3 mb-10 shadow-xl overflow-hidden rounded-lg'>
             <div>
                 <Link to={ `/package/${ packageId }` }>
                     <img src={ thumbnail } alt="" className='h-72 w-full object-cover' />
                 </Link>
             </div>
-            <div className='bg-slate-200 pt-10 px-5'>
-                <Link className='text-3xl font-bold' to={ `/package/${ packageId }` }>{ title }</Link>
+            <div className='bg-slate-200 lg:pt-10 pt-5 px-5'>
+                <Link className='lg:text-3xl text-2xl lg:font-bold font-semibold' to={ `/package/${ packageId }` }>{ title }</Link>
                 <p className='text-base my-2'>{ details }</p>
-                <div className='bg-white shadow-md rounded-full py-2 px-5 inline-block mt-5'>
+                <div className='bg-white shadow-md rounded-full py-2 px-5 inline-block lg:mt-5 my-5'>
                     <div className='flex gap-2 text-sm font-medium text-primary items-center'>
                         <p className='flex items-center gap-1'>
                             <AiFillClockCircle />
@@ -35,7 +36,7 @@ const TourCard = ({ item }) => {
                     </div>
                 </div>
             </div>
-            <div className='bg-primary flex justify-center items-center text-white'>
+            <div className='bg-primary flex justify-center items-center lg:py-0 py-5 text-white'>
                 <div className='text-center'>
                     <div className='flex items-center gap-5'>
                         <span>({ reviews } reviews)</span>
