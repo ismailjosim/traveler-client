@@ -1,19 +1,8 @@
 import React from 'react'
 import moment from 'moment';
-import {
-	BsCalendar3,
-	BsClock,
-	BsFacebook,
-	BsFillGeoAltFill,
-	BsInstagram,
-	BsLinkedin,
-	BsTwitter,
-} from 'react-icons/bs'
+import { BsCalendar3, BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs'
 
 const TopHeader = () => {
-
-
-
 	return (
 		<div className='hidden lg:block bg-primary text-white py-2'>
 			<div className='w-11/12 mx-auto flex justify-between py-1'>

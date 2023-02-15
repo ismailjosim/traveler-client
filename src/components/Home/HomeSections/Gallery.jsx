@@ -3,9 +3,6 @@ import SectionHeading from '../../../utilities/SectionHeading'
 import img01 from '../../../assets/images/gallery (1).jpg';
 import img02 from '../../../assets/images/gallery (2).jpg';
 import img03 from '../../../assets/images/gallery (3).jpg';
-import img04 from '../../../assets/images/gallery (4).jpg';
-import img05 from '../../../assets/images/gallery (5).jpg';
-import img06 from '../../../assets/images/gallery (6).jpg';
 
 const Gallery = () => {
 	const heading = {
