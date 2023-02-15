@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment';
 import {
 	BsCalendar3,
 	BsClock,
@@ -10,21 +11,19 @@ import {
 } from 'react-icons/bs'
 
 const TopHeader = () => {
+
+
+
 	return (
 		<div className='hidden lg:block bg-primary text-white py-2'>
 			<div className='w-11/12 mx-auto flex justify-between py-1'>
 				<div className='flex gap-2'>
-					<div className='flex items-center gap-2 border-r-2 pr-1 border-white text-sm'>
+					<div className='flex items-center gap-2 border-r-2 pr-2 border-white text-sm'>
 						<BsCalendar3 />
-						<span>Thursday, Mar 26, 2021</span>
-					</div>
-					<div className='flex items-center gap-2 border-r-2 pr-1 border-white text-sm'>
-						<BsFillGeoAltFill />
-						<span>Cox's Bazar, BD</span>
+						<span>{ moment().format('dddd') }</span>
 					</div>
 					<div className='flex items-center gap-2 text-sm'>
-						<BsClock />
-						<span>Mon-Fri: 10 AM – 5 PM</span>
+						<span>{ moment().format('LL') }</span>
 					</div>
 				</div>
 				<div className='flex gap-5 items-center text-white text-lg'>
