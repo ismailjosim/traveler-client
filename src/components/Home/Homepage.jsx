@@ -13,7 +13,7 @@ import TopDestinations from './HomeSections/TopDestinations'
 
 const Homepage = () => {
 	return (
-		<div>
+		<>
 			<Hero />
 			<HolidayForm />
 			<Featured />
@@ -25,7 +25,7 @@ const Homepage = () => {
 			<Reviews />
 			<CTA />
 			<Partners />
-		</div>
+		</>
 	)
 }
 
