@@ -92,11 +92,11 @@ const Hero = () => {
 			}
 			<div className="absolute right-4 bottom-4 z-10 w-12 h-12 flex items-center justify-center font-bold text-primary" slot="container-end">
 				<svg
-					className='absolute left-0 top-0 z-10 w-full h-full stroke-primary fill-none transform -rotate-90 stroke_custom'
+					className='absolute left-0 bottom-11 z-10 w-full h-full stroke-primary fill-none transform -rotate-90 stroke_custom'
 					viewBox="0 0 48 48" ref={ progressCircle }>
 					<circle cx="24" cy="24" r="20"></circle>
 				</svg>
-				<span className='text-primary' ref={ progressContent }></span>
+				<span className='text-primary absolute bottom-14' ref={ progressContent }></span>
 			</div>
 		</Swiper>
 	)

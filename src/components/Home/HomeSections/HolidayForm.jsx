@@ -11,7 +11,7 @@ const HolidayForm = () => {
 
 
     return (
-        <div className='relative z-0'>
+        <div className='relative z-10 pt-10'>
             <div className="section-shape lg:mt-12 md:mt-12 mt-20" />
             <div className="w-11/12 mx-auto grid lg:grid-cols-6 grid-cols-1 items-center bg-white shadow-xl rounded-lg overflow-hidden z-10">
                 <div className="bg-primary col-span-1">
