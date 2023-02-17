@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import slideImg01 from '../../../assets/homepage/slide01.jpg'
 import slideImg02 from '../../../assets/homepage/slide02.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SingleSlide from './SingleSlide';
 import '../../../styles/Custom.css'
 
 // Import Swiper styles
@@ -11,13 +12,9 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, EffectCreative, Navigation, Pagination } from "swiper";
-import SingleSlide from './SingleSlide';
 
 const slides = [
 	{
-		id: 1,
-		prev: 4,
-		next: 2,
 		picture: slideImg01,
 		subHeading: 'Amazing Places',
 		heading: 'Make Your Trip Fun & Noted',
@@ -26,9 +23,6 @@ const slides = [
 		btnText: 'Get Started',
 	},
 	{
-		id: 2,
-		prev: 1,
-		next: 3,
 		picture: slideImg02,
 		subHeading: 'Amazing Places',
 		heading: 'Make Your Trip Fun & Noted',
@@ -37,9 +31,6 @@ const slides = [
 		btnText: 'Get Started',
 	},
 	{
-		id: 3,
-		prev: 2,
-		next: 4,
 		picture: slideImg01,
 		subHeading: 'Amazing Places',
 		heading: 'Make Your Trip Fun & Noted',
@@ -48,9 +39,6 @@ const slides = [
 		btnText: 'Get Started',
 	},
 	{
-		id: 4,
-		prev: 3,
-		next: 1,
 		picture: slideImg02,
 		subHeading: 'Amazing Places',
 		heading: 'Make Your Trip Fun & Noted',
@@ -71,7 +59,8 @@ const Hero = () => {
 
 	return (
 		<Swiper
-			spaceBetween={ 30 }
+			speed={ 1000 }
+			spaceBetween={ 50 }
 			centeredSlides={ true }
 			autoplay={ {
 				delay: 10000,
@@ -83,7 +72,7 @@ const Hero = () => {
 			modules={ [Autoplay, Pagination, EffectCreative, Navigation] }
 			onAutoplayTimeLeft={ onAutoplayTimeLeft }
 			grabCursor={ true }
-			effect={ "cards" }
+			effect={ "creative" }
 			creativeEffect={ {
 				prev: {
 					shadow: true,
@@ -100,13 +89,14 @@ const Hero = () => {
 						<SingleSlide slide={ slide }></SingleSlide>
 					</SwiperSlide>
 				})
-
 			}
-			<div className="autoplay-progress" slot="container-end">
-				<svg viewBox="0 0 48 48" ref={ progressCircle }>
+			<div className="absolute right-4 bottom-4 z-10 w-12 h-12 flex items-center justify-center font-bold text-primary" slot="container-end">
+				<svg
+					className='absolute left-0 top-0 z-10 w-full h-full stroke-primary fill-none transform -rotate-90 stroke_custom'
+					viewBox="0 0 48 48" ref={ progressCircle }>
 					<circle cx="24" cy="24" r="20"></circle>
 				</svg>
-				<span ref={ progressContent }></span>
+				<span className='text-primary' ref={ progressContent }></span>
 			</div>
 		</Swiper>
 	)
