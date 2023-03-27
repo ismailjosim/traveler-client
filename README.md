@@ -63,13 +63,6 @@
 </div>
 
 <br />
-<h2 align='center'>All Packages Page 📦</h2>
-<br />
-<div align='center'>
-<img src='https://i.ibb.co/HX0kbws/Traveler-Destinations.png'/>
-</div>
-
-<br />
 <h2 align='center'>All Packages Page 🎁</h2>
 <br />
 <div align='center'>
@@ -84,7 +77,7 @@
 </div>
 
 <br />
-<h2 align='center'>Contact Page 🎮</h2>
+<h2 align='center'>Contact Page ✉️</h2>
 <br />
 <div align='center'>
 <img src='https://i.ibb.co/GxCq27Q/Traveler-Contact.png'/>
