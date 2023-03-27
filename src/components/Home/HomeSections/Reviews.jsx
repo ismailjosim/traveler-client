@@ -70,7 +70,7 @@ const Reviews = () => {
                     { contents.map((content, idx) => {
                         const { name, post, details } = content
                         return (
-                            <div>
+                            <div key={ idx }>
                                 <p className="flex items-center text-center text-gray-500 lg:mx-8">{ details }</p>
 
                                 <div className="flex flex-col items-center justify-center mt-8 ">

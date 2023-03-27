@@ -11,7 +11,7 @@ const Cart = () => {
         <section>
             <PageHeading headTitle={ 'CART' } />
             <div>
-                <div class="w-9/12 mx-auto">
+                <div className="w-9/12 mx-auto">
                     <div className="overflow-x-auto w-full">
                         <table className="table w-full">
 
@@ -25,7 +25,6 @@ const Cart = () => {
                                 </tr>
                             </thead>
                             <tbody>
-
                                 { arr.map((item, idx) => {
                                     return (
                                         <tr key={ idx } className='border-2'>
@@ -33,7 +32,7 @@ const Cart = () => {
                                                 <label>
                                                     <input type="checkbox" className="checkbox" />
                                                 </label>
-                                                <img src={ cartImg } alt="" class="object-cover w-16 h-16 rounded" />
+                                                <img src={ cartImg } alt="" className="object-cover w-16 h-16 rounded" />
                                             </td>
                                             <td className='border-2'>
                                                 SUMMER HOLIDAY TO THE AXOLOTLS RIVER
@@ -45,9 +44,8 @@ const Cart = () => {
                                                     <input
                                                         type="number"
                                                         min="1"
-                                                        value="1"
                                                         id="Line2Qty"
-                                                        class="h-8 w-12 rounded border-2-gray-200 bg-gray-50 p-0 text-center text-xs text-gray-600 [-moz-appearance:_textfield] focus:outline-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none"
+                                                        className="h-8 w-12 rounded border-2-gray-200 bg-gray-50 p-0 text-center text-xs text-gray-600 [-moz-appearance:_textfield] focus:outline-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none"
                                                     />
                                                     <BiPlus />
                                                 </div>
@@ -72,29 +70,29 @@ const Cart = () => {
                         </div>
                         <div className='border-y-2 pr-5 py-5'>
                             <div>
-                                <div class="flex justify-end gap-10">
+                                <div className="flex justify-end gap-10">
                                     <dt>Subtotal</dt>
                                     <dd>£250</dd>
                                 </div>
-                                <div class="flex justify-end gap-10">
+                                <div className="flex justify-end gap-10">
                                     <dt>VAT</dt>
                                     <dd>£25</dd>
                                 </div>
-                                <div class="flex justify-end gap-10">
+                                <div className="flex justify-end gap-10">
                                     <dt>Discount</dt>
                                     <dd>-£20</dd>
                                 </div>
 
-                                <div class="flex justify-end gap-10">
+                                <div className="flex justify-end gap-10">
                                     <dt>VAT</dt>
                                     <dd>£25</dd>
                                 </div>
 
-                                <div class="flex justify-end gap-10">
+                                <div className="flex justify-end gap-10">
                                     <dt>Discount</dt>
                                     <dd>-£20</dd>
                                 </div>
-                                <div class="flex justify-end gap-10">
+                                <div className="flex justify-end gap-10">
                                     <dt>Total</dt>
                                     <dd>£200</dd>
                                 </div>
