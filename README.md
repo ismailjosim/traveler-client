@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+<div align='center'><img width='200' src='https://i.ibb.co/bd0qCtC/Traveler-logo.png'/></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2>About the project</h2>
+<p>
 
-## Available Scripts
+</p>
 
-In the project directory, you can run:
+  <h4><b>Traveler</b>A travel app that allowed users to search for and book new tours and travels. The project was built using ReactJS for the frontend and Node.js and MongoDB for the backend.</h4>
 
-### `npm start`
+👉 Live Demo: <a target='_blank' href='https://travel-client-49757.web.app/'>Traveler</a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h3>Build with:</h3>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* ReactJS
+* Tailwind CSS
+* Daisy UI
+* Firebase
+* NodeJS
+* ExpressJS
+* MongoDB
 
-### `npm test`
+### NPM Packages
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Tanstack Query
+* MomentJS
+* Date Picker
+* React Icons
+* React Images Viewer
+* React Photo View
+* React Router DOM
+* React Slick Slider
+* React Toastify
+* sweetalert2
+* Swiper
 
-### `npm run build`
+<h2>Screenshots of the Project 🖼️</h2>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h2 align='center'>Home Page 🏡</h2>
+<br />
+<div align='center'>
+<img src='https://i.ibb.co/tKNfBP5/Traveler-Home.png'/>
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br />
+<h2 align='center'>About US Page 📂</h2>
+<br />
+<div align='center'>
+<img src='https://i.ibb.co/3Myf5S3/Traveler-About-US.png'/>
+</div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br />
+<h2 align='center'>All Destinations Page ✈️</h2>
+<br />
+<div align='center'>
+<img src='https://i.ibb.co/HX0kbws/Traveler-Destinations.png'/>
+</div>
 
-### `npm run eject`
+<br />
+<h2 align='center'>Destination Details Page 🧳</h2>
+<br />
+<div align='center'>
+<img src='https://i.ibb.co/n3WFyYc/Traveler-Single-Destination.png'/>
+</div>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br />
+<h2 align='center'>All Packages Page 🎁</h2>
+<br />
+<div align='center'>
+<img src='https://i.ibb.co/ySgJXcC/Traveler-Packages.png'/>
+</div>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br />
+<h2 align='center'>Package Details Page 💲</h2>
+<br />
+<div align='center'>
+<img src='https://i.ibb.co/FnxvbJq/Traveler-Package-Details.png'/>
+</div>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<br />
+<h2 align='center'>Contact Page ✉️</h2>
+<br />
+<div align='center'>
+<img src='https://i.ibb.co/GxCq27Q/Traveler-Contact.png'/>
+</div>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<br />
+<h2 align='center'>FAQs Page 🤔</h2>
+<br />
+<div align='center'>
+<img src='https://i.ibb.co/WDRhjrT/Traveler-FAQs-Page.png'/>
+</div>
 
-## Learn More
+<br />
+<h2 align='center'>Login Page 👤</h2>
+<br />
+<div align='center'>
+<img src='https://i.ibb.co/2g76nQs/Traveler-Login.png'/>
+</div>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br />
+<h2 align='center'>Register Page ➕</h2>
+<br />
+<div align='center'>
+<img src='https://i.ibb.co/z7dGfvG/Traveler-Register.png'/>
+</div>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br />
+<h2 align='center'>Booking Page 🚩</h2>
+<br />
+<div align='center'>
+<img src='https://i.ibb.co/vzHjydy/Traveler-Booking.png'/>
+</div>
 
-### Code Splitting
+<br />
+<h2 align='center'>Cart Page 🛒</h2>
+<br />
+<div align='center'>
+<img src='https://i.ibb.co/DkmJWPb/Traveler-Cart.png'/>
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br />
+<h2 align='center'>404 Error Page ⚠️</h2>
+<br />
+<div align='center'>
+<img src='https://i.ibb.co/ZgC65QS/Traveler-Payment.png'/>
+</div>
