@@ -6,77 +6,108 @@ const Header = () => {
 	// const { user, userLogout } = useContext(AuthContext);
 	const [setIsActive] = useState('/')
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 	const menuItems = (
 		<>
-			<li>
+			<li className='group relative flex justify-center'>
 				<NavLink
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/'
 				>
+					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Home</span>
+
 					Home
 				</NavLink>
 			</li>
-			<li>
+			<li className='group relative flex justify-center'>
 				<NavLink
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/about'
 				>
+					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">About</span>
+
 					About
 				</NavLink>
 			</li>
-			<li>
+			<li className='group relative flex justify-center'>
 				<NavLink
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/destinations'
 				>
+					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Destination</span>
+
 					Destination
 				</NavLink>
 			</li>
-			<li>
+			<li className='group relative flex justify-center'>
 				<NavLink
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/packages'
 				>
+					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Packages</span>
+
 					Packages
 				</NavLink>
 			</li>
-			<li>
+			<li className='group relative flex justify-center'>
 				<NavLink
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/blog'
 				>
-					blog
+					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Blog</span>
+
+					Blog
 				</NavLink>
 			</li>
-			<li>
+			<li className='group relative flex justify-center'>
 				<NavLink
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/contact'
 				>
+					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Contact Us</span>
+
 					Contact Us
 				</NavLink>
 			</li>
-			<li>
+			<li className='group relative flex justify-center'>
 				<NavLink
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/faq'
 				>
+					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">FAQs</span>
+
 					FAQs
 				</NavLink>
 			</li>
-			<li>
+			<li className='group relative flex justify-center'>
 				<NavLink
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/cart'
 				>
+					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Cart</span>
+
 					Cart
 				</NavLink>
 			</li>
-			<li>
+			<li className='group relative flex justify-center'>
 				<NavLink
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/login'
 				>
+					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">login</span>
+
 					login/register
 				</NavLink>
 			</li>
