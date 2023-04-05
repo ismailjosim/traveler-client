@@ -7,18 +7,6 @@ const Header = () => {
 	const [setIsActive] = useState('/')
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 	const menuItems = (
 		<>
 			<li className='group relative flex justify-center'>
