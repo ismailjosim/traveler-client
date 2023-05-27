@@ -7,7 +7,7 @@
 
   <h4><b>Traveler</b>A travel app that allowed users to search for and book new tours and travels. The project was built using ReactJS for the frontend and Node.js and MongoDB for the backend.</h4>
 
-👉 Live Demo: <a target='_blank' href='https://travel-client-49757.web.app/'>Traveler</a>
+👉 Live Demo: <a target='_blank' href='https://travelvistabd.web.app/'>Traveler</a>
 
 <h3>Build with:</h3>
 
