@@ -14,7 +14,7 @@ const Header = () => {
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/'
 				>
-					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Home</span>
+					<span className="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Home</span>
 
 					Home
 				</NavLink>
@@ -24,7 +24,7 @@ const Header = () => {
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/about'
 				>
-					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">About</span>
+					<span className="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">About</span>
 
 					About
 				</NavLink>
@@ -34,7 +34,7 @@ const Header = () => {
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/destinations'
 				>
-					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Destination</span>
+					<span className="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Destination</span>
 
 					Destination
 				</NavLink>
@@ -44,7 +44,7 @@ const Header = () => {
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/packages'
 				>
-					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Packages</span>
+					<span className="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Packages</span>
 
 					Packages
 				</NavLink>
@@ -54,7 +54,7 @@ const Header = () => {
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/blog'
 				>
-					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Blog</span>
+					<span className="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Blog</span>
 
 					Blog
 				</NavLink>
@@ -64,7 +64,7 @@ const Header = () => {
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/contact'
 				>
-					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Contact Us</span>
+					<span className="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Contact Us</span>
 
 					Contact Us
 				</NavLink>
@@ -74,7 +74,7 @@ const Header = () => {
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/faq'
 				>
-					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">FAQs</span>
+					<span className="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">FAQs</span>
 
 					FAQs
 				</NavLink>
@@ -84,7 +84,7 @@ const Header = () => {
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/cart'
 				>
-					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Cart</span>
+					<span className="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">Cart</span>
 
 					Cart
 				</NavLink>
@@ -94,7 +94,7 @@ const Header = () => {
 					className='hover:text-white hover:bg-primary uppercase font-semibold transition-all duration-500 rounded-lg'
 					to='/login'
 				>
-					<span class="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">login</span>
+					<span className="absolute -top-8 z-30 scale-0  transition-all ease-in-out rounded bg-error p-2 text-xs text-white group-hover:scale-100 delay-100">login</span>
 
 					login/register
 				</NavLink>
