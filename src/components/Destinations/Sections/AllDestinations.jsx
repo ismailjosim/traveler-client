@@ -26,9 +26,7 @@ const AllDestinations = () => {
 
 	return (
 		<div className='mb-10'>
-			<div className='w-11/12 mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10'>
-				{ content }
-			</div>
+			<div className='w-11/12 mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10'>{ content }</div>
 		</div>
 	)
 }

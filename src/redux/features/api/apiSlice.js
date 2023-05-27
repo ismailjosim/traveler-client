@@ -6,7 +6,7 @@ export const apiSlice = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: 'http://localhost:5000',
     }),
-    tagTypes: ["TourPackages", "Destinations", "Blogs"],
+    tagTypes: ["TourPackages", "Blogs", "Destinations"],
     endpoints: (builder) => ({
         getTourPackages: builder.query({
             query: () => "/tourPackages",
@@ -15,8 +15,7 @@ export const apiSlice = createApi({
         }),
         getDestinations: builder.query({
             query: () => "/destinations",
-            providesTags: ["Destinations"]
-
+            providesTags: ["Destinations"],
         }),
         getBlogs: builder.query({
             query: () => "/blogs",

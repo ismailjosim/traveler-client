@@ -40,7 +40,7 @@ const TopPackages = () => {
 				{ content }
 			</div>
 			<div className='text-center'>
-				<Button btnText={ 'Explore more' } destination={ '/destinations' }></Button>
+				<Button btnText={ 'Explore more' } destination={ '/packages' }></Button>
 			</div>
 		</section>
 	)

@@ -1,29 +1,33 @@
 
-import React from 'react';
 import SectionHeading from '../../../utilities/SectionHeading';
-import { useQuery } from '@tanstack/react-query';
 import DestinationCard from '../../Destinations/Sections/DestinationCard';
 import Button from '../../../utilities/Button';
-
+import { useGetDestinationsQuery } from '../../../redux/features/api/apiSlice';
+import Loading from '../../../utilities/Loading';
+import Error from '../../../utilities/Error';
+const heading = {
+    subHeading: 'Uncover Place',
+    headingOne: 'POPULAR',
+    headingTwo: 'DESTINATION',
+    describe: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.'
+}
 const TopDestinations = () => {
-    const heading = {
-        subHeading: 'Uncover Place',
-        headingOne: 'POPULAR',
-        headingTwo: 'DESTINATION',
-        describe:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
+    const { data, isError, isLoading } = useGetDestinationsQuery();
+
+    let content = null;
+    if (isLoading) {
+        content = <Loading />
     }
 
-    const { data: destinations = [] } = useQuery({
-        queryKey: ['destinations'],
-        queryFn: async () => {
-            const res = await fetch(
-                'https://travel-server-woad.vercel.app/destinations',
-            )
-            const data = await res.json()
-            return data?.destinations
-        },
-    })
+    if (!isLoading && isError) {
+        content = <Error message="No Videos Found!" />
+    }
+
+    if (!isLoading && !isError && data.length === 0) {
+        content = <Error message="No Videos Found!"></Error>
+    } else {
+        content = data?.destinations.slice(0, 6).map(item => <DestinationCard item={ item } key={ item._id } />)
+    }
 
 
 
@@ -31,9 +35,7 @@ const TopDestinations = () => {
         <div>
             <SectionHeading heading={ heading } />
             <div className='w-11/12 mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10'>
-                {
-                    destinations.slice(0, 6).map((item) => <DestinationCard item={ item } key={ item._id } />)
-                }
+                { content }
             </div>
             <div className='text-center mt-10'>
                 <Button btnText={ 'View All' } destination={ '/destinations' }></Button>
