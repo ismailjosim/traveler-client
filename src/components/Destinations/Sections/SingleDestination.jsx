@@ -14,8 +14,6 @@ const SingleDestination = () => {
 	const { name, location, rating, picture, details, packageIncludes, returnPolicy, gallery } = destination;
 
 
-
-
 	return (
 		<div>
 			<PageHeading headTitle={ name } />

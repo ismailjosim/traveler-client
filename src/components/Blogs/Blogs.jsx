@@ -1,18 +1,30 @@
-import { useQuery } from '@tanstack/react-query'
-import React from 'react'
-import { BsFillPersonFill } from 'react-icons/bs'
 import { FaBars, FaTh } from 'react-icons/fa'
 import PageHeading from '../../utilities/PageHeading'
+import { useGetBlogsQuery } from '../../redux/features/api/apiSlice'
+import Loading from '../../utilities/Loading'
+import Error from '../../utilities/Error'
+import SingleArticle from './SingleArticle'
 
 const Blogs = () => {
-	const { data: blogs = [] } = useQuery({
-		queryKey: ['blogs'],
-		queryFn: async () => {
-			const res = await fetch('https://travel-server-woad.vercel.app/blogs')
-			const data = await res.json()
-			return data?.blogs
-		},
-	})
+	const { data, isError, isLoading } = useGetBlogsQuery();
+
+	let content = null;
+	if (isLoading) {
+		content = <Loading />
+	}
+
+	if (!isLoading && isError) {
+		content = <Error message="No Videos Found!" />
+	}
+
+	if (!isLoading && !isError && data.length === 0) {
+		content = <Error message="No Videos Found!"></Error>
+	} else {
+		content = data?.blogs.map(blog => <SingleArticle blog={ blog } key={ blog._id } />)
+	}
+
+
+
 
 	return (
 		<div>
@@ -20,7 +32,7 @@ const Blogs = () => {
 			<div className='w-11/12 mx-auto grid grid-cols-3 gap-5'>
 				<div className='col-span-2'>
 					<div className='flex justify-between items-center mb-5'>
-						<h3>Show 1-5 of { blogs.length } results</h3>
+						<h3>Show 1-5 of { data?.blogs.length } results</h3>
 						<div className='flex gap-2'>
 							<div className='active:bg-secondary bg-neutral p-2 rounded-md text-white hover:bg-secondary transition-all duration-500'>
 								<FaBars />
@@ -37,60 +49,7 @@ const Blogs = () => {
 						</select>
 					</div>
 					<div>
-						{ blogs.map((blog, idx) => {
-							const { title, category, details, date, creator, thumbnail } =
-								blog
-							return (
-								<article
-									key={ idx }
-									className='flex bg-white transition shadow-xl hover:shadow-md border rounded-md mb-5'
-								>
-									<div className='rotate-180 p-2 [writing-mode:_vertical-lr]'>
-										<time
-											dateTime='2022-10-10'
-											className='flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900'
-										>
-											<span>{ category }</span>
-											<span className='w-px flex-1 bg-gray-900/10'></span>
-											<span>{ date }</span>
-										</time>
-									</div>
-									<div className='hidden sm:block sm:basis-56'>
-										<img
-											alt='Guitar'
-											src={ thumbnail }
-											className='aspect-square h-full w-full object-cover'
-										/>
-									</div>
-									<div className='flex flex-1 flex-col justify-between'>
-										<div className='border-l border-gray-900/10 p-4 sm:border-l-transparent sm:p-6'>
-											<a href='/'>
-												<h3 className='font-bold uppercase text-gray-900'>
-													{ title }
-												</h3>
-											</a>
-											<div>
-												<p className='flex items-center gap-2'>
-													<BsFillPersonFill className='bg-primary text-white p-1 rounded-full text-xl' />
-													<span>{ creator }</span>
-												</p>
-											</div>
-											<p className='mt-2 text-sm leading-relaxed text-gray-700 line-clamp-3'>
-												{ details }{ ' ' }
-											</p>
-										</div>
-										<div className='sm:flex sm:items-end sm:justify-end'>
-											<a
-												href='/'
-												className='block bg-primary px-5 py-3 text-center text-xs font-bold uppercase text-white transition hover:bg-neutral'
-											>
-												Read Blog
-											</a>
-										</div>
-									</div>
-								</article>
-							)
-						}) }
+						{ content }
 					</div>
 				</div>
 				<div className='col-span-1'>
