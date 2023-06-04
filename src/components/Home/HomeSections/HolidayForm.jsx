@@ -44,6 +44,7 @@ const HolidayForm = () => {
                             selected={ startDate }
                             onChange={ (date) => setStartDate(date) }
                             dateFormat="PP"
+                            minDate={ new Date() } //Disable dates before the start date
 
                         />
                     </div>
@@ -53,6 +54,7 @@ const HolidayForm = () => {
                             selected={ endDate }
                             onChange={ (date) => setEndDate(date) }
                             dateFormat="PP"
+                            minDate={ startDate }
                         />
                     </div>
                     <div className='flex flex-col px-2 lg:px-0 lg:mb-0 mb-5'>
@@ -68,53 +70,3 @@ const HolidayForm = () => {
 };
 
 export default HolidayForm;
-
-
-/*
-
- <div className='flex gap-10'>
-                        <div>
-                            <select className="select w-full max-w-xs">
-                                <option>Destination</option>
-                                <option value={ 1 }>Destination</option>
-                                <option value={ 2 }>Argentina</option>
-                                <option value={ 3 }>Belgium</option>
-                                <option value={ 4 }>Canada</option>
-                                <option value={ 5 }>Denmark</option>
-                            </select>
-                        </div>
-                        <div>
-                            <select className="select w-full max-w-xs">
-                                <option>Travel Type</option>
-                                <option value={ 1 }>City Tour</option>
-                                <option value={ 2 }>Family Tour</option>
-                            </select>
-                        </div>
-                        <div>
-                            <select className="select w-full max-w-xs">
-                                <option value={ 1 }>Tour Duration</option>
-                                <option value={ 2 }>5 days</option>
-                                <option value={ 3 }>7 Days</option>
-                            </select>
-                        </div>
-                        <div className="text-center">
-                            <a href="/" className="btn btn-primary text-white flex items-center gap-1">
-                                <FaSearch className='font-bold' />
-                                <span>Search Now</span>
-                            </a>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/

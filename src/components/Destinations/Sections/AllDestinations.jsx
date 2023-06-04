@@ -6,9 +6,10 @@ import Error from '../../../utilities/Error'
 
 
 const AllDestinations = () => {
-	const { data, isError, isLoading } = useGetDestinationsQuery();
+	const { data, isError, isLoading, } = useGetDestinationsQuery();
 
 	let content = null;
+
 	if (isLoading) {
 		content = <Loading />
 	}
