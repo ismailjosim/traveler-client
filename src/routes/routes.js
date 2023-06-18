@@ -68,7 +68,6 @@ const routes = createBrowserRouter([
 			},
 			{
 				path: `/destination/:id`,
-				loader: ({ params }) => fetch(`https://travel-server-ismailjosim.vercel.app/destination/${ params.id }`),
 				element: <SingleDestination />
 			},
 			{

@@ -4,16 +4,20 @@ import { BsFillStarFill } from 'react-icons/bs'
 import { FaFacebookF, FaGooglePlusG, FaInstagram, FaTwitter } from 'react-icons/fa'
 import { GoCheck } from 'react-icons/go'
 import { RxCross2 } from 'react-icons/rx'
-import { useLoaderData } from 'react-router-dom'
+
 import imgDetails from '../../../assets/destinations/trending-large.jpg'
 import Button from '../../../utilities/Button'
 import PageHeading from '../../../utilities/PageHeading'
+import { useParams } from 'react-router-dom'
+import { useGetDestinationQuery } from '../../../redux/features/api/apiSlice'
 
 const SingleDestination = () => {
-	const { destination } = useLoaderData();
-	const { name, location, rating, picture, details, packageIncludes, returnPolicy, gallery } = destination;
+	const { id } = useParams();
+	const data = useGetDestinationQuery(id);
+	console.log(data);
+	const { name, location, rating, picture, details, packageIncludes, returnPolicy, gallery } = data || {};
 
-
+	useEffect(() => { window.scrollTo(0, 0) }, [])
 	return (
 		<div>
 			<PageHeading headTitle={ name } />
