@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BiMap } from 'react-icons/bi'
 import { BsFillStarFill } from 'react-icons/bs'
 import { FaFacebookF, FaGooglePlusG, FaInstagram, FaTwitter } from 'react-icons/fa'
@@ -18,6 +18,7 @@ const SingleDestination = () => {
 	const { name, location, rating, picture, details, packageIncludes, returnPolicy, gallery } = data || {};
 
 	useEffect(() => { window.scrollTo(0, 0) }, [])
+
 	return (
 		<div>
 			<PageHeading headTitle={ name } />
