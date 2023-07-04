@@ -18,7 +18,7 @@ export const apiSlice = createApi({
             providesTags: ["Destinations"],
         }),
         getDestination: builder.query({
-            query: (id) => `/destination/${ id }`,
+            query: (id) => `/destinations/${ id }`,
             providesTags: ["singleDestination"],
         }),
         getBlogs: builder.query({
